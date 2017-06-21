@@ -1,0 +1,155 @@
+{
+    "time": "20170109",
+    "flag": true,
+    "areaCode": [
+        {
+            "AREA_CODE": "HB.XG",
+            "AREA_NAME": "孝感"
+        }
+    ],
+    "top10": [
+        {
+            "RANK": 1,
+            "FEE_NAME": "4G语音58元套餐",
+            "TOTAL_VALUE": 22099,
+            "DAILY_VALUE": 6,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 2,
+            "FEE_NAME": "4G语音88元套餐",
+            "TOTAL_VALUE": 12761,
+            "DAILY_VALUE": 5,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 3,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐158档必选产品",
+            "TOTAL_VALUE": 5,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 4,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐188档必选产品",
+            "TOTAL_VALUE": 9,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 5,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐288档必选产品",
+            "TOTAL_VALUE": 1,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 6,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐58档必选产品",
+            "TOTAL_VALUE": 528,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 7,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐88档必选产品",
+            "TOTAL_VALUE": 557,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 8,
+            "FEE_NAME": "全球通统一套餐（2012版）_上网套餐128档必选产品",
+            "TOTAL_VALUE": 71,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 9,
+            "FEE_NAME": "全球通统一套餐（2012版）_商旅套餐58档必选产品",
+            "TOTAL_VALUE": 3105,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 10,
+            "FEE_NAME": "全球通统一套餐（2012版）_商旅套餐88档必选产品",
+            "TOTAL_VALUE": 1613,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        }
+    ],
+    "msg": "开门红指标数据获取成功。",
+    "end10": [
+        {
+            "RANK": 27,
+            "FEE_NAME": "4G语音238元套餐",
+            "TOTAL_VALUE": 434,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 28,
+            "FEE_NAME": "4G飞享套餐338元档",
+            "TOTAL_VALUE": 16,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 29,
+            "FEE_NAME": "4G飞享套餐338元档2014版",
+            "TOTAL_VALUE": 10,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 30,
+            "FEE_NAME": "4G语音48元套餐",
+            "TOTAL_VALUE": 2635,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 31,
+            "FEE_NAME": "4G飞享套餐88元档2014版",
+            "TOTAL_VALUE": 1004,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 32,
+            "FEE_NAME": "4G语音328元套餐",
+            "TOTAL_VALUE": 37,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 33,
+            "FEE_NAME": "4G语音408元套餐",
+            "TOTAL_VALUE": 17,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 34,
+            "FEE_NAME": "4G飞享套餐588元档2014版",
+            "TOTAL_VALUE": 1,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 35,
+            "FEE_NAME": "4G语音28元套餐",
+            "TOTAL_VALUE": 2367,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        },
+        {
+            "RANK": 36,
+            "FEE_NAME": "4G飞享套餐58元档2014版",
+            "TOTAL_VALUE": 1515,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0
+        }
+    ]
+}

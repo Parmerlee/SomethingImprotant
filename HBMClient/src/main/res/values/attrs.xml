@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="lDivider">
+        <attr name="showDivider" format="boolean"></attr>        
+        <attr name="padValue" format="boolean"></attr>        
+    </declare-styleable>
+</resources> 

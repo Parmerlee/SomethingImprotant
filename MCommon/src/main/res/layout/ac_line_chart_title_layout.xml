@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="200dp" >
+
+    <TextView
+        android:id="@+id/ac_chart_line1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_marginTop="30dp"
+        android:textColor="#ff005bbf"
+        android:textSize="16sp"
+        android:shadowColor="#ff6F6f6f"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_marginRight="33px"
+        android:text="● 本月" />
+
+    <TextView
+        android:id="@+id/ac_chart_line2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ac_chart_line1_tv"
+         android:layout_marginTop="30dp"
+        android:layout_marginRight="33px"
+        android:textColor="#ff848484"
+        android:shadowColor="#ff6F6f6f"
+        android:shadowDx="0.2"
+        android:shadowDy="0.2"
+        android:shadowRadius="1"
+        android:textSize="16sp"
+        android:text="● 去年同期" />
+
+    <TextView
+        android:id="@+id/ac_chart_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="发展用户趋势"
+        android:textColor="#ff333333"
+        android:textSize="16sp" />
+
+</RelativeLayout>

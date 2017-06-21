@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_home_new"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <!-- 抬頭 -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rank_top20_bk"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ll_logo_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@mipmap/logo_mobile" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="湖北移动掌上分析展现系统"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/home_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+             >
+            
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@mipmap/search_button"/>
+         
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    <!-- list列表 -->
+
+    <ListView
+        android:id="@+id/home_list_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@mipmap/home_list_divide"
+        android:layout_below="@+id/linearLayout1">
+    </ListView>
+
+</RelativeLayout>

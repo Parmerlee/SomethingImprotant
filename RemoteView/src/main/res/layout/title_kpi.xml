@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@mipmap/title_bg" >
+    <include layout="@layout/share_button_left" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#1b6e9a"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp" >
+
+        <Button
+            android:id="@+id/kpi_mgr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/icon_edit"
+            android:onClick="onClick"
+            android:visibility="gone" />
+
+        <com.bonc.mobile.common.view.DMSwitchButton
+            android:id="@+id/dm_switch"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

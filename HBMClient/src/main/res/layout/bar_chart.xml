@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/blc_legend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textColor="#ff104bd7"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/blc_legend2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/blc_legend1"
+        android:textColor="#ff000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/blc_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blc_legend2"
+        android:layout_marginLeft="5dp"
+        android:shadowColor="#ffdddddd"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0"
+        android:textColor="#ff231456"
+        android:textSize="10sp" />
+
+    <com.bonc.mobile.hbmclient.chart.BarChartView
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/blc_unit" >
+    </com.bonc.mobile.hbmclient.chart.BarChartView>
+
+</RelativeLayout>

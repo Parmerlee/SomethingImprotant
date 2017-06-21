@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 背景色 图标处：#909090  文字处：#666666  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="6" >
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#666666"
+	    android:layout_weight="5"
+	    android:gravity="center" >
+    <ImageView
+        android:id="@+id/id_notification_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#666666"
+        android:paddingLeft="14dp" >
+
+        <TextView
+            android:id="@+id/id_notification_title"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/id_notification_content"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

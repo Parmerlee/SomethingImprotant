@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/holiday_krilv_item_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:background="#E9F9FD"
+        android:orientation="vertical"
+        android:paddingTop="-2dp" 
+         android:padding="3dp">
+
+        <TextView
+            android:id="@+id/holiday_kpilv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#E9F9FD"
+            android:text="11111"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/holiday_kpilv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#E9F9FD"
+            android:padding="@dimen/padding_small"
+            android:text="2222"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/holiday_krilv_item_top"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/holiday_kpilv_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:text="3333"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/holiday_kpilv_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_small"
+            android:textColor="#0085D0" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.9"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/holiday_kpilv_item_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/padding_small"
+                android:textColor="#0085D0" />
+
+            <TextView
+                android:id="@+id/holiday_kpilv_item_num_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/holiday_kpilv_item_num1"
+                android:layout_alignTop="@+id/holiday_kpilv_item_num1"
+                android:layout_toRightOf="@+id/holiday_kpilv_item_num1"
+                android:gravity="left|bottom"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="#0085D0"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/holiday_kpilv_item_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_small"
+            android:text="5555"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

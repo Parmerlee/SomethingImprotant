@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/index_name"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="--"
+        android:textColor="#ff373737"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <com.bonc.mobile.hbmclient.view.LinkageHScrollView
+        android:id="@+id/index_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="horizontal"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/up_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#ff373737"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/index_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="--"
+                    android:textColor="#ff373737"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/down_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ff373737"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/divider_hor" />
+
+            <com.bonc.mobile.hbmclient.view.TopNView
+                android:id="@+id/area_topn"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </com.bonc.mobile.hbmclient.view.TopNView>
+
+            <com.bonc.mobile.hbmclient.view.TopNView
+                android:id="@+id/model_topn"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </com.bonc.mobile.hbmclient.view.TopNView>
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.LinkageHScrollView>
+
+</LinearLayout>

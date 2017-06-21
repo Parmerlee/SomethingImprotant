@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_left_rank_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高:"
+                android:textAppearance="@style/text_small_style" />
+
+            <TextView
+                android:id="@+id/id_left_rank_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="武汉"
+                android:textAppearance="@style/text_small_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_left_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/id_left_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textAppearance="@style/text_unit_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_right_rank_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高:"
+                android:textAppearance="@style/text_small_style" />
+
+            <TextView
+                android:id="@+id/id_right_rank_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="武汉"
+                android:textAppearance="@style/text_small_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_right_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/id_right_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textAppearance="@style/text_unit_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

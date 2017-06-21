@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HBMClient/HBMClient.iml" filepath="$PROJECT_DIR$/HBMClient/HBMClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MCommon/MCommon.iml" filepath="$PROJECT_DIR$/MCommon/MCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPortal/MPortal.iml" filepath="$PROJECT_DIR$/MPortal/MPortal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteView/RemoteView.iml" filepath="$PROJECT_DIR$/RemoteView/RemoteView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/draglistview/draglistview.iml" filepath="$PROJECT_DIR$/draglistview/draglistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work.iml" filepath="$PROJECT_DIR$/work.iml" />
+    </modules>
+  </component>
+</project>

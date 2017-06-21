@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.bonc.mobile.hbmclient.view.Top10HorizontalScrollView
+        android:id="@+id/id_ranking_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fadingEdge="none" >
+    </com.bonc.mobile.hbmclient.view.Top10HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/id_arrow_top10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/arrow_blue_left"
+        android:visibility="invisible" />
+
+</RelativeLayout>

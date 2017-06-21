@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	
+	>
+	<LinearLayout
+	    android:padding="10pt"
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView  android:textSize="20sp"
+			android:text="imei：" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	    <TextView  android:textSize="20sp"
+			android:id="@+id/imeiValue" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:padding="10pt"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView  android:textSize="20sp"
+			android:text="imsi：" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	    <TextView  android:textSize="20sp"
+			android:id="@+id/imsiValue" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+<!-- 	<Button 
+	    android:id="@+id/mobileinfo_send"
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center"
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:text="发送到服务器"
+	    
+	    /> -->
+</LinearLayout>

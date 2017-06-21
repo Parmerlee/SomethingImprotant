@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">7dp</dimen>
+    <dimen name="padding_large">9dp</dimen>
+    
+       <dimen name = "textSize_top_item">11sp</dimen>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lDivider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.bonc.mobile.hbmclient.view.DividerRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/ffc7e0f3"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/id_profit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="利润率前3" />
+    </com.bonc.mobile.hbmclient.view.DividerRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+		<com.bonc.mobile.hbmclient.view.MiddleKeyValueView 
+		    android:id="@+id/id_profit_column1"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/home_item_bg"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp"
+            android:layout_weight="1" />
+		<include layout="@layout/divider_ver"/>
+		<com.bonc.mobile.hbmclient.view.MiddleKeyValueView 
+		    android:id="@+id/id_profit_column2"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/home_item_bg"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp"
+            android:layout_weight="1" />
+		<include layout="@layout/divider_ver"/>
+		<com.bonc.mobile.hbmclient.view.MiddleKeyValueView 
+		    android:id="@+id/id_profit_column3"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/home_item_bg"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

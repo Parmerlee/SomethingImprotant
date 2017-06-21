@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/parent1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bk_main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:src="@mipmap/com_img_graph_line_top_black_light1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+			
+			当日值布局
+
+            <LinearLayout
+                android:id="@+id/top_value_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.3333"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                  android:id="@+id/zhibiao_desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#EE111111" >
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/zhibiao_value1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FF222222"
+                        android:textSize="25sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+			
+			上月值
+            <LinearLayout
+                android:id="@+id/top_huanbi_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.3333"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#EE111111"
+                    android:id="@+id/zhibiao_desc2" >
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/top_huanbi_percent"
+                        android:layout_width="20dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFAE432E"
+                        android:textSize="14sp" 
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/zhibiao_value2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFAE432E"
+                        android:textSize="25sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+			环比布局
+
+            <LinearLayout
+                android:id="@+id/top_tongbi_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.3333"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                
+               	 android:id="@+id/zhibiao_desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#EE111111" >
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/top_tongbi_percent"
+                        android:layout_width="20dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FF77AB13"
+                        android:textSize="14sp" 
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/zhibiao_value3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FF77AB13"
+                        android:textSize="25sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chart"
+            android:layout_width="@dimen/default_graph_width_hor"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/com_img_graph_line_top_white_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_if_name"
+        android:layout_width="140dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="接口名称"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_batchNumber"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="批次号"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_repeatNumber"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="重传号"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_is_delay"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="是否延迟"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_data_date"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="数据日期"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_data_time"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="应到时间"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_real_time"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="实际到达时间"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+    <TextView
+        android:id="@+id/id_if_type"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="接口类型"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/divider_hor" />
+
+</LinearLayout>

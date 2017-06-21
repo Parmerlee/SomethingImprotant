@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/login_relayout"  
+    android:background="@mipmap/bk_login"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.bonc.mobile.hbmclient.view.PatternView
+            android:id="@+id/lockPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dip" />
+    </LinearLayout>
+	
+    <DigitalClock
+        android:id="@+id/clock"
+        android:textSize="50dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="40dip"
+        android:textColor="#ffffff"
+        android:shadowColor="#000a33"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="130dip"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/login_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip"
+            android:text="@string/login_hint"
+            android:textColor="#ffffff"
+            android:shadowColor="#000a33"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+	    >
+        <TextView
+            android:id="@+id/system_area"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:shadowColor="#000a33"
+            android:shadowDx="1"
+            android:shadowDy="1"
+        	android:textColor="#ffffff" 
+	        android:text="@string/provice_app_title"
+	        android:textSize="14sp" />
+	</LinearLayout>
+</RelativeLayout>

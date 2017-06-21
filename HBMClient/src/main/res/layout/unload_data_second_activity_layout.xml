@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/rank_top20_bk"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_logo_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dip"
+                android:background="@mipmap/logo_mobile" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.6dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="二级title"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/synchhome_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dip"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="2012年12月12日，星期三"
+                    android:textColor="#ffffffff"
+                    android:textSize="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/body"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/id_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:cacheColorHint="#00000000"
+                android:divider="@mipmap/home_list_divide"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_search_his" type="id"></item>
+    <item name="tag_search_hot" type="id"></item>
+     <item name="tag_search_unions" type="id"></item>
+    <item name="tag_arcmenu" type="id"></item>
+
+</resources>

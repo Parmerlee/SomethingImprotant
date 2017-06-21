@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="month_develop_right_title4next">
+        <item >当月值</item>
+        <item >上月值</item>
+        <item >环比</item>
+        <item >同比</item>
+    </string-array>
+    <string-array name="day_develop_right_title4next">
+        <item >当日值</item>
+        <item >当月值</item>
+        <item >累计环比</item>
+        <item >累计同比</item>
+    </string-array>
+    <string-array name="month_develop_right_title">
+        <item >月趋势</item>
+        <item >当月值</item>
+        <item >上月值</item>
+        <item >环比</item>
+        <item >同比</item>
+    </string-array>
+    <string-array name="day_develop_right_title">
+        <item >日趋势</item>
+        <item >当日值</item>
+        <item >当月值</item>
+        <item >累计环比</item>
+        <item >累计同比</item>
+    </string-array>
+    <string-array name="month_develop_left_test_string">
+        <item >移动后付费</item>
+        <item >移动预付费</item>
+        <item >3G终端注册</item>
+        <item >宽带</item>
+        <item >普通宽带</item>
+        <item >光宽带</item>
+        <item >固话</item>
+    </string-array>
+    <string-array name="home_names">
+        <item >运营监控</item>
+        <item >财务月报</item>
+        <item >月度KPI</item>
+        <item >每日KPI</item>
+    </string-array>
+    <string-array name="financial_names">
+        <item >M1</item>
+        <item >M2</item>
+        <item >M3</item>
+        <item >M4</item>
+        <item >M5</item>
+        <item >M6</item>
+        <item >M7</item>
+        <item >M8</item>
+        <item >M9</item>
+        <item >M10</item>
+    </string-array>
+    <string-array name="financial_table_names">
+        <item >MON_TOTALINCOME</item>
+        <item >MON_PTHINCOME</item>
+        <item >MON_VISUALINCOME</item>
+        <item >MON_ADDINCOME</item>
+        <item >MON_DATAINCOME</item>
+        <item >MON_INFOINCOME</item>
+        <item >MON_IPINCOME</item>
+        <item >MON_OTHERINCOME</item>
+        <item >MON_GROUPINCOME</item>
+        <item >MON_SZXINCOME</item>
+    </string-array>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8884acd0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statistic_lite_key1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:tag="key"
+        android:textColor="#ff000000"
+        android:textScaleX="1"
+        android:textSize="16dp" />
+
+    <com.bonc.mobile.hbmclient.terminal.view.NumberCounterView
+        android:id="@+id/statistic_number1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="13dp"
+        android:gravity="right"
+        android:tag="value" >
+    </com.bonc.mobile.hbmclient.terminal.view.NumberCounterView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_split_lite" />
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="156.5dp"
+     android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statistic_lite_key2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:tag="key"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <com.bonc.mobile.hbmclient.terminal.view.NumberCounterView
+            android:id="@+id/statistic_number2_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="13dp"
+            android:gravity="right"
+            android:tag="value" >
+        </com.bonc.mobile.hbmclient.terminal.view.NumberCounterView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/statistic_lite_sub1_key_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="key"
+            android:text="环比"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/statistic_lite_sub1_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:tag="value"
+            android:text="180％"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+         android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/statistic_lite_sub2_key_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:tag="key"
+            android:text="环比"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/statistic_lite_sub2_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:layout_gravity="right|center_vertical"
+            android:tag="value"
+            android:text="180％"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+</merge>

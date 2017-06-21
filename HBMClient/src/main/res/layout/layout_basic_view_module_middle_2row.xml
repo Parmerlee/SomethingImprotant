@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_item_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:weightSum="34"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="23"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/text_second_title_style" />
+
+        <include
+            android:id="@+id/id_left_item_3column"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_basic_view_item_pss_3column" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/rank_divide_vertial" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="11"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_right_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/text_second_title_style" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/id_right_item_3column_middle"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_basic_view_item_pss_3column" />
+
+            <include
+                android:id="@+id/id_right_item_3column_right"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_basic_view_item_pss_3column" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            layout="@layout/title_second"
+            android:background="@mipmap/icon_title_small_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp" >
+
+            <TableRow android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="类型:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/appType"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <TableRow android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="版本号:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/versionNum"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <TableRow android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="版本名:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/buildName"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:text="Copyright © CMCC.HB. All Rights reserved." />
+
+</RelativeLayout>

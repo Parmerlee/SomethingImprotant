@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- body -->
+
+        <RelativeLayout
+            android:id="@+id/everyday_development_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+ <!-- 抬頭 -->
+
+    <LinearLayout
+      android:id="@+id/netpoint_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rank_top20_bk"
+        android:gravity="center_vertical"
+          
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ll_logo_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@mipmap/logo_mobile"
+            android:orientation="horizontal" 
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="湖北移动掌上分析展现系统"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/top_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+
+        
+        
+    </LinearLayout>
+      
+
+          
+
+            <LinearLayout
+                android:id="@+id/ll_divide4mon_area"
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:layout_below="@+id/netpoint_top" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/divide4mon_area" />
+            </LinearLayout>
+
+   <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:id="@+id/netpoint_search"
+  android:background="@drawable/round_shape"
+     android:layout_below="@+id/ll_divide4mon_area"
+     android:layout_margin="2dp"
+     >
+                <Button  
+        android:id="@+id/netpoint_search_button"  
+        android:layout_width="40dp"  
+        android:layout_height="40dp"
+        android:background="@mipmap/such_button"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+    />
+        <LinearLayout
+             android:id="@+id/netpoint_search_l"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+         android:background="@drawable/edit_round_shape"
+  android:layout_toLeftOf="@id/netpoint_search_button"
+        > 
+        <EditText 
+            android:id="@+id/netpoint_search_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/kpi_search_hint"
+             /> 
+      </LinearLayout>  
+      
+      
+    </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/netpoit_body"
+                android:background="@drawable/round_shape"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/netpoint_search"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/zhl_left_column_width"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/title_lineralayout"
+                        android:layout_width="@dimen/zhl_left_column_width"
+                        android:layout_height="40dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/mon_area_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#013759"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/netpoint_left_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@mipmap/divider"
+                        android:footerDividersEnabled="false"
+                        android:fadingEdge="none"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdgeLength="0dip"
+                    android:scrollbars="none" >
+
+                    <!-- 右侧最外层布局 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/lineralayout_right_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <!-- 右侧列表 -->
+
+                        <ListView
+                            android:id="@+id/netpoint_right_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:childDivider="#00000000"
+                            android:divider="@mipmap/divider"
+                            android:drawSelectorOnTop="false"
+                            android:fadingEdge="none"
+                            android:footerDividersEnabled="false"
+                            android:scrollbars="none"
+                            android:scrollingCache="false" >
+                        </ListView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+  
+    </FrameLayout>
+
+</RelativeLayout>

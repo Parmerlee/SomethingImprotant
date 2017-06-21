@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_top_rank_goto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/rank_top20_bk"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dip"
+                        android:shadowColor="#ff000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="#ffffff"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <include layout="@layout/share_button" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list_rank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dip"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:scrollbars="vertical"
+                android:scrollingCache="false"></ListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/area_select"
+                android:layout_width="75dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/button_bg_blue"
+                android:gravity="center"
+                android:padding="@dimen/common_padding_3dp"
+                android:text="----"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/date_select"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/button_bg_blue"
+                android:gravity="center"
+                android:padding="@dimen/common_padding_3dp"
+                android:text="----/--/--"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

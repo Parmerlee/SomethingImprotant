@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 同比：50%  箭头 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:gravity="left|center_vertical"
+
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/text_mark_style"
+        android:text="同比：" />
+
+    <TextView
+        android:id="@+id/id_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textAppearance="@style/text_value_smaller_style"
+        android:text="--%" />
+    <ImageView
+        android:id="@+id/id_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@mipmap/triangle_upward" />
+
+</LinearLayout>

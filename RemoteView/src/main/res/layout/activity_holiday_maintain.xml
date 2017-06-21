@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7DDE4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_second" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7DDE5"
+        android:padding="3dp" >
+
+        <include
+            android:id="@+id/kpi_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/kpi_button_panel_new" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/main_divider"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+
+                <com.bonc.mobile.common.view.SimpleListView
+                    android:id="@+id/holiday_maintain_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/main_divider"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/padding_large"
+                    android:showDividers="middle" >
+                </com.bonc.mobile.common.view.SimpleListView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <com.bonc.mobile.common.view.SimpleListView
+                        android:id="@+id/horizontal_kpilist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:divider="@mipmap/divider_hor"
+                        android:orientation="horizontal"
+                        android:scrollbars="@null"
+                        android:showDividers="middle" >
+                    </com.bonc.mobile.common.view.SimpleListView>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <com.bonc.mobile.common.view.SimpleListView
+                        android:id="@+id/horizontal_dial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:divider="@mipmap/divider_hor"
+                        android:orientation="horizontal"
+                        android:scrollbars="@null"
+                        android:showDividers="none" >
+                    </com.bonc.mobile.common.view.SimpleListView>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <com.bonc.mobile.common.view.SimpleListView
+                        android:id="@+id/horizontal_kpilist2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:divider="@mipmap/divider_hor"
+                        android:orientation="horizontal"
+                        android:scrollbars="@null"
+                        android:showDividers="middle" >
+                    </com.bonc.mobile.common.view.SimpleListView>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <com.bonc.mobile.common.view.SimpleListView
+                        android:id="@+id/horizontal_simplelistview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:divider="@mipmap/divider_hor"
+                        android:orientation="horizontal"
+                        android:scrollbars="@null"
+                        android:showDividers="middle" >
+                    </com.bonc.mobile.common.view.SimpleListView>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerPadding="3dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/holiday_toplv_item_layout" />
+
+                    <include layout="@layout/holiday_toplv_item_layout" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

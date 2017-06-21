@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_success">登录成功</string>
+    <string name="login_check">正在验证密码,请稍候...</string>
+    <string name="login_password_error">密码绘制有误,请重试.</string>
+    <string name="login_user_invalid">认证失败，请联系管理员.\n联系电话：18771108236</string>
+    <string name="login_password_freeze">您的账户由于输入密码错误次数过多,已被冻结,请联系管理员.电话:18771108236</string>
+    <string name="login_close">您非法操作次数过多,应用被迫退出.</string>
+    <string name="login_hint">请在下方矩形区域内绘制您的密码</string>
+     <string name="login_no_authority">您没有查看权限</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_second" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/kpi_panel"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.bonc.mobile.common.kpi.SimpleKpiTitleRow
+                    android:id="@+id/list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/icon_title_small_blue"
+                    android:orientation="horizontal" />
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@mipmap/divider"
+                    android:listSelector="#00000000" >
+                </ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <include android:id="@+id/kpi_panel" layout="@layout/kpi_button_panel" />
+    </RelativeLayout>
+
+</LinearLayout>

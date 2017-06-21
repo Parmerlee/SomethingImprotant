@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/frontitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dip"
+        android:layout_marginTop="23dip"
+        android:src="@mipmap/img_icon_frontitemgray" />
+
+    <ImageView
+        android:id="@+id/nextitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dip"
+        android:layout_marginTop="23dip"
+        android:src="@mipmap/img_icon_nexttitem1" />
+
+    <TextView
+        android:id="@+id/textviewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="60dip"
+        android:text="kk "
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="90dip"
+        android:fadingEdge="none" >
+
+        <TextView
+            android:id="@+id/textviewcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:text="aa "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </ScrollView>
+
+</RelativeLayout>

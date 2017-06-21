@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.bonc.mobile.hbmclient.view.BoardScrollView
+        android:id="@+id/id_scrollview_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarStyle="insideInset" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_top10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="当年每月销量"
+                        android:textAppearance="@style/text_title_style" />
+
+                    <include
+                        android:id="@+id/id_bar_chart_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        layout="@layout/model_column_chart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <include
+                        android:id="@+id/id_pss_month_middle_sales"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        layout="@layout/layout_basic_view_module_pss_month_sales" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:background="@mipmap/home_item_bg" >
+
+                    <com.bonc.mobile.hbmclient.view.HorizontalProgressBarViewGroup
+                        android:id="@+id/id_progressbar_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="当月终端销量结构"
+                            android:textAppearance="@style/text_title_style" />
+                    </com.bonc.mobile.hbmclient.view.HorizontalProgressBarViewGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/home_item_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="4G终端价格分档"
+                            android:textAppearance="@style/text_title_style" />
+
+                        <include
+                            android:id="@+id/id_pie_chart_left"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            layout="@layout/pie_chart_layout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/home_item_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="4G终端补贴分档"
+                            android:textAppearance="@style/text_title_style" />
+
+                        <include
+                            android:id="@+id/id_pie_chart_right"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            layout="@layout/pie_chart_layout" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.BoardScrollView>
+
+    <include layout="@layout/layout_arrow_two_r" />
+
+    <include layout="@layout/layout_button_terminal" />
+
+</RelativeLayout>

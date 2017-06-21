@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding_5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <include
+                layout="@layout/login_panel"
+                android:layout_width="@dimen/login_loginWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_5dp" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/button_blue2"
+                android:onClick="onClick"
+                android:text="提交认证"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/send_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="无4A账号点击这里"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.8"
+            android:textColor="@color/grey"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</LinearLayout>

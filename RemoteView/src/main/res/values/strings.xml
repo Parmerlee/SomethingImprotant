@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网络千里眼</string>
+    <string name="msg_channel_name">请输入新的频道名称</string>
+    <string name="add_channel">增加频道</string>
+    <string name="modify_channel">修改频道名称</string>
+    <string name="search_kpi">请输入指标名称进行搜索</string>
+    
+</resources>

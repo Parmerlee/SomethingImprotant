@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/business_outlets_title"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@mipmap/info_summary_title" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/id_emptyview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent_blank"
+            android:gravity="center"
+            android:text="暂时没有数据"
+            android:textAppearance="@style/dp_list_style"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/transparent_blank"
+            android:divider="@color/lightgray"
+            android:dividerHeight="3dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/business_outlets_button"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal" >
+    </RelativeLayout>
+
+</RelativeLayout>

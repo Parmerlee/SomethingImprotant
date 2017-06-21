@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bonc.mobile.hbmclient.view.DividerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lDivider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+
+            <com.bonc.mobile.hbmclient.view.KeyValueView
+                android:id="@+id/id_column1"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:orientation="vertical" />
+
+			<include layout="@layout/divider_ver"/>        
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <com.bonc.mobile.hbmclient.view.KeyValueView
+                    android:id="@+id/id_row1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    lDivider:padValue="true" />
+
+                <include layout="@layout/divider_hor" />
+
+                <com.bonc.mobile.hbmclient.view.KeyValueView
+                    android:id="@+id/id_row2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    lDivider:padValue="true"
+                    android:orientation="vertical" />
+
+                <include layout="@layout/divider_hor" />
+
+                <com.bonc.mobile.hbmclient.view.KeyValueView
+                    android:id="@+id/id_row3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    lDivider:padValue="true"
+                    android:orientation="vertical" />
+
+                <include layout="@layout/divider_hor" />
+
+                <TextView
+                    android:id="@+id/id_row4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="更多" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</com.bonc.mobile.hbmclient.view.DividerRelativeLayout>

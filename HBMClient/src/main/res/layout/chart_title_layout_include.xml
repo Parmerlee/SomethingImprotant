@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/cur_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="#ff333333"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/cur_area_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="#fff87d1a"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/cur_last_month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/cur_area_title_tv"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cur_this_month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/cur_last_month_tv"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textColor="#ff0040a0"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_chart_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp" />
+
+</LinearLayout>

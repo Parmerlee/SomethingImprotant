@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/search_common_color"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/id_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:padding="7dp"
+            android:scaleType="center"
+            android:src="@mipmap/back_search" />
+    </RelativeLayout>
+
+    <com.bonc.mobile.common.view.ClearEditText
+        android:id="@+id/search_actv_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="7"
+        android:background="@android:color/white"
+        android:completionThreshold="1"
+        android:drawableStart="@android:drawable/ic_search_category_default"
+        android:hint="请输入搜索内容"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/search_tv_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="搜索"
+        android:textColor="@color/white" />
+
+</LinearLayout>

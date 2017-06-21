@@ -1,0 +1,1 @@
+include  ':MPortal', ':MCommon',':CordovaLib',':HBMClient',':RemoteView',':draglistview'

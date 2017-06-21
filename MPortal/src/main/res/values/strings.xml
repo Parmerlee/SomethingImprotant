@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">掌分应用门户</string>
+    <string name="get_vcode">获取动态码</string>
+    <string name="msg_no_auth">当前账户暂时不能使用该应用，需系统分配权限后才能使用，是否联系管理员？\n管理员电话：</string>
+    <string name="title_activity_search_main">SearchMainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_action">SearchActionActivity</string>
+    <string name="title_activity_channle_manager">ChannleManagerActivity</string>
+    <string name="title_activity_prefer">PreferActivity</string>
+    <string name="title_activity_search_detail">SearchDetailActivity</string>
+
+    <string name="loading_data">正在加载数据,请稍候...</string>
+    <string name="network_error">服务器连接失败!</string>
+    <string name="data_error">服务器数据异常!</string>
+    <string name="no_data">今日暂无数据</string>
+    <string name="no_more_data">无更多数据</string>
+    <string name="hint">提示</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="title_activity_help">HelpActivity</string>
+</resources>

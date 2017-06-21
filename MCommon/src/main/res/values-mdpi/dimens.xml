@@ -1,0 +1,24 @@
+<resources>
+    <!-- mdpi is same with default-->
+
+    <!-- mdpi padding/margin size-->
+    <dimen name="common_padding_2dp">2dp</dimen>
+    <dimen name="common_padding_3dp">3dp</dimen>
+    <dimen name="common_padding_5dp">5dp</dimen>
+    <dimen name="common_padding_8dp">8dp</dimen>
+    <dimen name="common_padding_10dp">10dp</dimen>
+
+    <!-- mdpi font size-->
+    <dimen name="common_font_12sp">12sp</dimen>
+    <dimen name="common_font_14sp">14sp</dimen>
+    <dimen name="common_font_15sp">15sp</dimen>
+    <dimen name="common_font_16sp">16sp</dimen>
+    <dimen name="common_font_18sp">18sp</dimen>
+    <dimen name="common_font_20sp">20sp</dimen>
+
+    <!-- MPortal only-->
+    <dimen name="login_marginTop">40dp</dimen>
+    <dimen name="login_marginLeft">40dp</dimen>
+    <dimen name="login_marginBottom">20dp</dimen>
+    
+</resources>

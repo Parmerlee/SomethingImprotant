@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="hoilday_dash_layout" type="id"></item>
+    <item name="hoilday_topn_adapter" type="id"></item>
+    <item name="hoilday_kpi_adapter" type="id"></item>
+    <item name="hoilday_blchart_adapter" type="id"></item>
+
+</resources>

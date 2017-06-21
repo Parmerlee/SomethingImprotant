@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:divider="@mipmap/divider_hor"
+    android:dividerPadding="2dp"
+    android:orientation="horizontal"
+    android:showDividers="middle" >
+
+    <TextView
+        android:id="@+id/order_adapter_item_head_tv5"
+        style="@style/order_item_tv_style_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="状态" />
+
+    <TextView
+        android:id="@+id/order_adapter_item_head_tv1"
+        style="@style/order_item_tv_style_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="工单名称" />
+
+    <TextView
+        android:id="@+id/order_adapter_item_head_tv2"
+        style="@style/order_item_tv_style_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="工单编号" />
+
+    <TextView
+        android:id="@+id/order_adapter_item_head_tv3"
+        style="@style/order_item_tv_style_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="工单类型" />
+
+    <TextView
+        android:id="@+id/order_adapter_item_head_tv4"
+        style="@style/order_item_tv_style_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="创建人" />
+
+</LinearLayout>

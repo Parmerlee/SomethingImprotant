@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/terminal_bg_repeat">
+			
+				
+				        <!-- 每月发展 title layout -->
+				        <LinearLayout
+				            android:id="@+id/title"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:background="@mipmap/rank_top20_bk"  >
+				            <TextView
+					                android:id="@+id/logo_title"
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:shadowColor="#ff000000"
+					                android:shadowDx="1"
+					                android:shadowDy="1"
+					                android:shadowRadius="1"
+					                android:textColor="#ffffff"
+					                android:layout_marginLeft="20dip"
+					                android:layout_gravity="center_vertical"
+					                android:textSize="20sp" />
+
+				        </LinearLayout>
+				
+				        <!-- 主体部分 -->
+				           
+				           <LinearLayout
+				              android:layout_width="wrap_content"
+				              android:layout_height="fill_parent"
+				              android:orientation="horizontal">
+				           
+				               	  <LinearLayout
+				               	        android:id="@+id/left_layout"
+				       				    android:layout_width="@dimen/zhl_left_column_width"
+				                        android:layout_height="fill_parent"
+				                        android:orientation="vertical" >
+				                          
+				                        <LinearLayout
+                                          android:id="@+id/title_lineralayout"
+                                          android:layout_width="@dimen/zhl_left_column_width"
+                                          android:layout_height="40dip"                   
+                                          android:gravity="center_vertical"
+                                          android:orientation="horizontal"
+                                          android:background="@drawable/glay_list_title">
+				                         <TextView
+                                           android:id="@+id/top5_left_column_title"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="35dip"
+                                           android:gravity="center" 
+                                           android:text=""
+                                           android:textColor="#013759"
+                                           android:textSize="16sp" />
+				                         </LinearLayout>
+				                        <!-- 右侧列表  880000FF -->
+				                        <ExpandableListView
+				                            android:id="@+id/data_left_list_view"
+				                            android:layout_width="match_parent"
+				                            android:layout_height="fill_parent"
+				                            android:cacheColorHint="#00000000"
+				                            android:childDivider="@mipmap/divider"
+				                            android:drawSelectorOnTop="false"
+				                            android:fastScrollEnabled="false"
+				                            android:fadingEdge="none"
+				                            android:fadingEdgeLength="0dp"
+				                            android:listSelector="#00000000" 
+				                            android:footerDividersEnabled="false"
+				                            android:groupIndicator="@null"
+				                            android:scrollbars="none"
+				                            android:scrollingCache="false" >
+				                        </ExpandableListView>
+				                    </LinearLayout>
+				               
+				               
+				               
+		               
+				                <HorizontalScrollView
+				                    android:id="@+id/scroll_right"
+				                    android:layout_width="wrap_content"
+				                    android:layout_height="fill_parent"
+				                    android:fadingEdgeLength="0dip"
+				                    android:scrollbars="none" >
+				                    <!-- 右侧最外层布局 -->
+				
+				                    <LinearLayout
+				       				    android:layout_width="wrap_content"
+				                        android:layout_height="fill_parent"
+				                        android:orientation="vertical" >
+				                          <LinearLayout
+				                            android:id="@+id/top5_right_column_title"
+				                            android:layout_width="fill_parent"
+				                            android:layout_height="40dip"    
+				                            android:gravity="center_vertical"
+				                            android:orientation="horizontal" >
+				                          </LinearLayout>
+				    
+				                        <!-- 右侧列表  880000FF -->
+				                        <ExpandableListView
+				                            android:id="@+id/data_right_list_view"
+				                            android:layout_width="match_parent"
+				                            android:layout_height="fill_parent"
+				                            android:cacheColorHint="#00000000"
+				                            android:childDivider="@mipmap/divider"
+				                            android:drawSelectorOnTop="false"
+				                            android:fastScrollEnabled="false"
+				                            android:fadingEdge="none"
+				                            android:fadingEdgeLength="0dp"
+				                            android:listSelector="#00000000" 
+				                            android:footerDividersEnabled="false"
+				                            android:groupIndicator="@null"
+				                            android:scrollbars="none"
+				                            android:scrollingCache="false" >
+				                        </ExpandableListView>
+				                    </LinearLayout>
+    
+				   </HorizontalScrollView>				   
+				 </LinearLayout>               
+</LinearLayout>

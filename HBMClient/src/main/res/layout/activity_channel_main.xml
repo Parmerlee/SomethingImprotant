@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/icon_title_blue"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/id_button_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_navigator"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/navigator_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="渠道类"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_panel"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/list_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <include
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            layout="@layout/ch_index_list_header_left" />
+
+                        <ListView
+                            android:id="@+id/name_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:childDivider="#00000000"
+                            android:divider="@mipmap/divider"
+                            android:drawSelectorOnTop="false"
+                            android:fadingEdge="none"
+                            android:footerDividersEnabled="false"
+                            android:scrollbars="none"
+                            android:scrollingCache="false" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fadingEdge="horizontal"
+                        android:fillViewport="true"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <include
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                layout="@layout/ch_index_list_header_right" />
+
+                            <ListView
+                                android:id="@+id/data_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:cacheColorHint="#00000000"
+                                android:childDivider="#00000000"
+                                android:divider="@mipmap/divider"
+                                android:drawSelectorOnTop="false"
+                                android:fadingEdge="none"
+                                android:footerDividersEnabled="false"
+                                android:scrollbars="none"
+                                android:scrollingCache="false" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chart1_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/pie_chart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        android:id="@+id/chart2_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/home_item_bg"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/pie_chart" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chart3_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/home_item_bg"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/pie_chart" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/button_panel"
+            layout="@layout/index_button_panel" />
+    </RelativeLayout>
+
+</LinearLayout>

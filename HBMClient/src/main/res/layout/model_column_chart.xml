@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mcc_out_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mcc_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/mcc_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:text="(%)"
+            android:textColor="#ff231456"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mcc_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:shadowColor="#ffdddddd"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0"
+            android:textAppearance="@style/text_second_title_style" />
+        <!-- </LinearLayout> -->
+
+
+        <!-- 柱图显示 add柱图view -->
+
+        <LinearLayout
+            android:id="@+id/mcc_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/mcc_unit" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

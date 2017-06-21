@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- body -->
+
+        <RelativeLayout
+            android:id="@+id/everyday_development_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/mon_area_top"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/rank_top20_bk" >
+
+                <TextView
+                    android:id="@+id/area_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="#ffffff"
+                    android:textSize="20dip" />
+
+                <include layout="@layout/share_button" />
+            </RelativeLayout>
+
+            <!-- 全省最高、全省最低、波动最大 -->
+
+            <LinearLayout
+                android:id="@+id/ll_most"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/mon_area_top"
+                android:weightSum="2" >
+
+                <!-- 全省最高 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_highest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/highest_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#101010" />
+
+                        <TextView
+                            android:id="@+id/highest_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#101010"
+                            android:textSize="20dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- 垂直分隔线 -->
+
+                    <LinearLayout
+                        android:layout_width="8dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/divider_hor" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- 全省最低 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_lowest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lowest_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#101010" />
+
+                        <TextView
+                            android:id="@+id/lowest_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#101010"
+                            android:textSize="20dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- 垂直分隔线 -->
+
+                    <LinearLayout
+                        android:layout_width="8dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/divider_hor" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- 波动最大 -->
+
+                <RelativeLayout
+                    android:layout_width="100dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/biggest_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="波动最大"
+                            android:textColor="#101010" />
+
+                        <TextView
+                            android:id="@+id/biggest_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#101010"
+                            android:textSize="20dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_divide4mon_area"
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:layout_below="@+id/ll_most" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/divide4mon_area" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_dev_area_barzzz"
+                android:layout_width="match_parent"
+                android:layout_height="160dip"
+                android:layout_below="@+id/ll_divide4mon_area"
+                android:background="@color/zeven_list_color" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#ffdddddd"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="0"
+                        android:text="■ 单位："
+                        android:textColor="#ff1b7FE6"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_w_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#ffdddddd"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="0"
+                        android:text=""
+                        android:textColor="#ff1b7FE6"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <!-- 柱图显示 add柱图view -->
+
+                <LinearLayout
+                    android:id="@+id/ll_dev_area_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dip"
+                    android:layout_marginTop="15sp" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mon_area_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ll_dev_area_barzzz"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/zhl_left_column_width"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/title_lineralayout"
+                        android:layout_width="@dimen/zhl_left_column_width"
+                        android:layout_height="40dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/mon_area_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#013759"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/mon_area_left_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@mipmap/divider"
+                        android:fadingEdge="none"
+                        android:footerDividersEnabled="false"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdgeLength="0dip"
+                    android:scrollbars="none" >
+
+                    <!-- 右侧最外层布局 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/lineralayout_right_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <!-- 右侧列表 -->
+
+                        <ListView
+                            android:id="@+id/mon_area_right_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:childDivider="#00000000"
+                            android:divider="@mipmap/divider"
+                            android:drawSelectorOnTop="false"
+                            android:fadingEdge="none"
+                            android:footerDividersEnabled="false"
+                            android:scrollbars="none"
+                            android:scrollingCache="false" >
+                        </ListView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_select_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/brand_select_new2"
+                android:layout_width="100dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_select_new2"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@mipmap/button_bg_blue"
+                android:gravity="center"
+                android:text="----/--/--"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

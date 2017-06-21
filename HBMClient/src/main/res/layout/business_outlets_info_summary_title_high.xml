@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        android:gravity="center"
+        android:text="指标" />
+
+    <include layout="@layout/divider_ver"
+        android:layout_height="fill_parent"
+        android:layout_width="1dp"
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_marginBottom="@dimen/title_margin" />
+
+    <TextView
+        android:id="@+id/society"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="社会" />
+
+    <include layout="@layout/divider_ver"
+        android:layout_height="fill_parent"
+        android:layout_width="1dp"
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_marginBottom="@dimen/title_margin" />
+
+    <TextView
+        android:id="@+id/own"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="自有" />
+
+</LinearLayout>

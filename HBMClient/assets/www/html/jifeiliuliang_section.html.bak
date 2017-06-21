@@ -1,0 +1,952 @@
+<section id="jifeiliuliang_section">
+    <header>
+        <nav class="left">
+            <a href="#" data-icon="undo" id="btn_jifeiliuliang_back">返回</a>
+        </nav>
+        <nav class="right">
+            <a href="#" data-icon="share" id="btn_jifeiliuliang_share"></a>
+            <a href="#" data-icon="loop" id="btn_jifeiliuliang_refresh"></a>
+        </nav>
+        <h1 class="title" >累计计费流量及增幅情况</h1>
+    </header>
+
+    <article class="active" id="jifeiliuliang_article" data-scroll="true" >
+
+        <div id="jifeiliuliang_slider" class="slider">
+			<div>
+				<div>
+
+					<div >
+						<ul class="list" id="jifeiliuliangpage1">
+							<li style="padding: 0px 0px 0px 0px;">
+								<div class="grid ztitle-grid">
+									<div class="col-ztitle-left" style="width:10%;"></div>
+									<div class="col-ztitle-left" style="width:30%;" >累计计费流量</div>
+									<div class="col-ztitle-middle" style="width:30%;" >同比增幅</div>
+									<div class="col-ztitle-right" style="width:30%;">4G计费流量</div>
+								   
+								</div>
+							</li>
+							
+							<li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >全省</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">137.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">82.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">128.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+											<span class="icon arrow-right-zl" style="color:#2573fe"></span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >天门</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.2</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">121.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >黄冈</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">8.6</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">109.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">8.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >随州</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">3.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">101.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">3.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >恩施</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">7.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">98.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">6.6</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >孝感</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">8.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">97.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">7.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >宜昌</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">10.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">95.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">9.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >潜江</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">91.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >鄂州</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">2.2</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">85.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">2.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >江汉</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">84.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">1.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >襄阳</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">12.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">80.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">12.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >荆州</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">9.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">79.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">8.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >十堰</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">7.2</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">76.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">6.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >荆门</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">5.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">75.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">5.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >咸宁</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">4.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">73.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">4.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >武汉</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">47.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">72.91</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">44.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >黄石</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">6.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">72.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">5.6</span>
+											<span style="font-size: 0.5em;color:#2573fe">亿MB</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+
+				 <div>
+
+					<div >
+						<ul class="list" id="jifeiliuliangpage2">
+							<li style="padding: 0px 0px 0px 0px;">
+								<div class="grid ztitle-grid">
+									<div class="col-ztitle-left" style="width:10%;">
+										<span class="icon arrow-left-zl" style="color:#fff"></span>
+									</div>
+									<div class="col-ztitle-right" style="width:30%;">同比增幅</div>
+									<div class="col-ztitle-right" style="width:30%;">4G流量占比</div>
+								</div>
+							</li>
+							
+							<li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >全省</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">111.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >天门</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">163.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">92.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >黄冈</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">158.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >随州</div>
+									</div>
+
+								   <div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">137.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >恩施</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">137.2 </span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">92.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >孝感</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">135.6</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">92.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >宜昌</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">129.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">94.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >潜江</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">124.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >鄂州</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">115.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">94.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >江汉</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">110.9</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >襄阳</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">111.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >荆州</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">104.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >十堰</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">110.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">92.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >荆门</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">102.3</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.1</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >咸宁</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">107.4</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">92.8</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >武汉</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">96.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">94.7</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							 <li style="padding: 0px 0px 0px 0px;" >
+								<div class="grid three-grid">
+									<div class="col-1" style="width:10%;">
+										<div class="areatag" >黄石</div>
+									</div>
+
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#E74C3C">99.0</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+									<div class="col-1" style="width:30%">
+										<p>
+											<span style="color:#000">93.5</span>
+											<span style="font-size: 0.5em;color:#2573fe">%</span>
+										</p>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+        </div>
+    </article>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

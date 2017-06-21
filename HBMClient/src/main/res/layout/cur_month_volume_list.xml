@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cur_month_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4cffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/cur_month_list_field"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+        </LinearLayout>
+
+        <com.bonc.mobile.hbmclient.terminal.view.HindListView
+            android:id="@+id/cur_month_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0px"
+            android:footerDividersEnabled="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0px" >
+        </com.bonc.mobile.hbmclient.terminal.view.HindListView>
+    </LinearLayout>
+
+</FrameLayout>

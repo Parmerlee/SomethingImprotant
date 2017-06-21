@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要搜索的日报名称" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.bonc.mobile.common.view.DatePickerButton
+            android:id="@+id/start_date"
+            android:layout_width="110dp"
+            android:layout_height="45dp" />
+
+        <com.bonc.mobile.common.view.DatePickerButton
+            android:id="@+id/end_date"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

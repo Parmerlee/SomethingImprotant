@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:visibility="gone"
+    android:layout_height="wrap_content" >
+
+    <!-- <ImageView
+        android:id="@+id/bottom_imageview_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_background" /> -->
+    <!-- 返回 -->
+
+    <ImageView
+        android:id="@+id/bottom_back_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="9dip"
+        android:clickable="true"
+        android:visibility="gone"
+        android:src="@drawable/btn_back" />
+    <!-- 截屏 -->
+
+    <ImageView
+        android:id="@+id/bottom_screen_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/btn_screen_shot"
+        android:visibility="gone" />
+    <!-- 公告 -->
+
+    <ImageView
+        android:id="@+id/bottom_announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dip"
+        android:clickable="true"
+        android:visibility="gone"
+        android:src="@drawable/btn_announcement" />
+
+    <ImageView
+        android:id="@+id/img_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="12dip"
+        android:visibility="gone"
+        android:src="@mipmap/img_announcement_count" />
+
+    <TextView
+        android:id="@+id/text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dip"
+        android:layout_marginRight="17dip"
+        android:text="0" />
+
+</RelativeLayout>

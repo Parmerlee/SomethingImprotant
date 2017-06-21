@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <common.share.lwg.util.builder.mainkpi.LTitleBuilder
+        android:id="@+id/id_title_left"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/level_title_height"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/listContainerLeft"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

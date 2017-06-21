@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:background="@drawable/glay_list_title"
+        android:maxEms="5"
+        android:textColor="#ff00345c"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:shadowColor="#ffDFDFDF"
+        android:text="" />
+

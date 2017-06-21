@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bk_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lockPatternll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.bonc.mobile.common.view.PatternView
+            android:id="@+id/lockPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <com.bonc.mobile.portal.MyDigitalClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/login_marginTop"
+        android:layout_marginTop="@dimen/login_marginLeft"
+        android:shadowColor="#000a33"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock"
+        android:layout_marginLeft="@dimen/common_padding_30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="3dp"
+            android:shadowColor="#000a33"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/common_font_18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rereg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_marginBottom"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="重新认证"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+
+</RelativeLayout>

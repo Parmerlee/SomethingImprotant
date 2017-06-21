@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   
+    
+    <TextView 
+      android:id="@+id/kpi_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:layout_marginLeft="7dp"
+      android:layout_marginRight="7dp"
+      android:textColor="#ff0065bc"
+      android:text="测试啊呵呵" />
+    
+    <TextView 
+      android:id="@+id/kpi_desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:layout_marginLeft="7dp"
+      android:layout_marginRight="7dp"
+      android:textColor="#ff000000"
+      android:text="这事一个典型的指标测试啊。这事一个典型的指标测试啊。这事一个典型的指标测试啊。这事一个典型的指标测试啊。" />
+    
+    <ImageView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/kpi_search_dividor" />
+     
+    <LinearLayout
+        android:id="@+id/menu_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="3dp" > 
+         
+    </LinearLayout>    
+   
+</LinearLayout>

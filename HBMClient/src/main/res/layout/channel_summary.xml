@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_item_bg"
+    android:orientation="vertical" >
+
+    <com.bonc.mobile.hbmclient.view.DividerRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_summaryName"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="名称"
+                android:textStyle="bold" />
+
+            <include layout="@layout/divider_ver" />
+
+            <TextView
+                android:id="@+id/id_summaryRankName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:text="分项内容" />
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.DividerRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <com.bonc.mobile.hbmclient.view.DividerRelativeLayout   
+            android:layout_width="100dp"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <com.bonc.mobile.hbmclient.view.KeyValueView
+                        android:id="@+id/id_summary_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <com.bonc.mobile.hbmclient.view.KeyValueView
+                        android:id="@+id/id_summary_profitRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.bonc.mobile.hbmclient.view.DividerRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <include
+                android:id="@+id/id_summary_income"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                layout="@layout/channel_summary_part" />
+
+            <include
+                android:id="@+id/id_summary_cost"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                layout="@layout/channel_summary_part" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

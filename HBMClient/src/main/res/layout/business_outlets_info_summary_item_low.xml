@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lDivider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <com.bonc.mobile.hbmclient.state.business_outlets.item.KeyValueView3
+        android:id="@+id/column1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        lDivider:padValue="true" />
+
+    <include layout="@layout/business_outlets_divider_ver" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="21" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="13" />
+
+        <com.bonc.mobile.hbmclient.state.business_outlets.item.KeyValueView2
+            android:id="@+id/column2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            lDivider:padValue="true" />
+    </LinearLayout>
+
+</LinearLayout>

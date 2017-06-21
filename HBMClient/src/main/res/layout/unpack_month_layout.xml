@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.bonc.mobile.hbmclient.view.BoardScrollView
+        android:id="@+id/id_scrollview_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarStyle="insideInset" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_top10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/id_unpack_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/layout_basic_view_item_bottom" />
+
+                <include
+                    android:id="@+id/id_unpack_row2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/layout_basic_view_module_2row2column" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="当年每月拆包率"
+                        android:textAppearance="@style/text_title_style" />
+
+                    <include
+                        android:id="@+id/id_bar_line_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        layout="@layout/model_column_chart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.BoardScrollView>
+
+    <include layout="@layout/layout_arrow_two_r" />
+
+    <include layout="@layout/layout_button_terminal" />
+
+</RelativeLayout>

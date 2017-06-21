@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/divider_hor"
+        android:showDividers="middle" >
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="当前环节" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单位" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="部门" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="任务接受" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="处理人" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="经办选择" />
+
+        <TextView
+            style="@style/order_item_pop2_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="意见" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/divider_hor"
+        android:paddingTop="2dp"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/pop_layout2_tv1"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="当前环节" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv2"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单位" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv3"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="部门" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv4"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="任务接受" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv5"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="处理人" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv6"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="经办选择" />
+
+        <TextView
+            android:id="@+id/pop_layout2_tv7"
+            style="@style/order_item_pop2_content_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="意见" />
+    </LinearLayout>
+
+</LinearLayout>

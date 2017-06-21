@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15px" >
+
+                <TextView
+                    android:id="@+id/section_this_month_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15px"
+                    android:layout_toLeftOf="@+id/section_last_month_tv"
+                    android:shadowColor="#ffdddddd"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="0"
+                    android:text="■ 本月"
+                    android:textColor="#ff1b7FE6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/section_last_month_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15px"
+                    android:shadowColor="#ffdddddd"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="0"
+                    android:text="■ 上月"
+                    android:textColor="#ffff8500"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>

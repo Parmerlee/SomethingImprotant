@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@mipmap/divider_hor"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/order_adapter_item_tv5"
+            style="@style/order_item_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/order_adapter_item_tv1"
+            style="@style/order_item_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/order_adapter_item_tv2"
+            style="@style/order_item_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@mipmap/down"
+            android:drawablePadding="-10dp" />
+
+        <TextView
+            android:id="@+id/order_adapter_item_tv3"
+            style="@style/order_item_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/order_adapter_item_tv4"
+            style="@style/order_item_tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <com.bonc.mobile.common.view.FlowView
+            android:id="@+id/flowview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:scrollbars="@null"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.bonc.mobile.common.view.SimpleListView
+            android:id="@+id/basetime_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

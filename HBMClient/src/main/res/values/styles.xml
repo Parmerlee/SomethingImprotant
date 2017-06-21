@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="text_small_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_smaller_style">
+        <item name="android:textSize">11dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_title_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+
+    <style name="text_second_title_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+
+    <style name="text_unit_style">
+        <item name="android:textSize">11dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_value_style">
+        <item name="android:textSize">25dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_mark_style">
+        <item name="android:textSize">11dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_value_smaller_style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_value_small_style">
+        <item name="android:textSize">20dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_unit_small_style">
+        <item name="android:textSize">10dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_title_small_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="text_title_sub_style">
+        <item name="android:textSize">11dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+
+    <style name="mainkpi_title_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/ffffffff</item>
+    </style>
+
+    <style name="sidebar_title_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/ffffffff</item>
+    </style>
+
+    <style name="sidebar_item_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/ff3c3c3c</item>
+    </style>
+
+    <style name="version_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/t4cffffff</item>
+    </style>
+
+    <style name="dp_list_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="button_text_style">
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/ffffff</item>
+    </style>
+
+    <style name="button_text_style2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="menuGroupNameFocus">
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="menuGroupNameUnfocus">
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="announce_list_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:width">100dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="order_item_tv_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="order_item_tv_style_head">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:background">@color/common_bg</item>
+    </style>
+
+    <style name="order_item_pop2_tv_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:background">@color/common_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="order_item_pop2_content_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">3</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 家宽点击textview style -->
+    <style name="broad_click_textview">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">--</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 分享对话框样式 -->
+    <style name="ShareDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 新版终端运营title样式 -->
+    <style name="title_group_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/terminal_menu_divider_color</item>
+    </style>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <!-- body -->
+
+    <RelativeLayout
+        android:id="@+id/everyday_development_top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="36dp" >
+
+        <!-- 抬頭 -->
+
+        <include
+            android:id="@+id/simpleTitle"
+            layout="@layout/business_outlets_simple_title" />
+
+        <RelativeLayout
+            android:id="@+id/netpoint_search"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/simpleTitle"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_shape" >
+
+            <Button
+                android:id="@+id/netpoint_search_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:background="@mipmap/such_button" />
+
+            <LinearLayout
+                android:id="@+id/netpoint_search_l"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/netpoint_search_button"
+                android:background="@drawable/edit_round_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/netpoint_search_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="@string/netpoint_search_hint" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/netpoit_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/netpoint_search"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_shape"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/netpoint_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@mipmap/divider"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_button_single" />
+
+</RelativeLayout>

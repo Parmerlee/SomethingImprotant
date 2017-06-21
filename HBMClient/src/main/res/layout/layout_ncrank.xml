@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- body -->
+
+        <RelativeLayout
+            android:id="@+id/everyday_development_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+ <!-- 抬頭 -->
+
+    <LinearLayout
+      android:id="@+id/netpoint_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rank_top20_bk"
+        android:gravity="center_vertical"
+          
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ll_logo_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@mipmap/logo_mobile" 
+            android:orientation="horizontal" 
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="湖北移动掌上分析展现系统"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/top_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+
+        
+        
+    </LinearLayout>
+      
+
+          
+
+            <LinearLayout
+                android:id="@+id/ll_divide4mon_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/netpoint_top" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/divide4mon_area" />
+            </LinearLayout>
+
+<LinearLayout 
+    
+     android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ll_divide4mon_area"
+    
+                  android:orientation="vertical"
+                  
+
+    >
+                <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+          
+            android:gravity="center"
+            android:text="新入网客户数"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+             android:background="@mipmap/icon_main_kpi_background"
+                    />
+                <ImageView 
+                    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                    android:background="@mipmap/divider"
+                    />
+    <LinearLayout
+                android:id="@+id/netpoit_body"
+              android:padding="2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+       
+           
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/nc_left_column_width"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+            
+      <RelativeLayout 
+            android:id="@+id/title_lineralayout"
+    android:layout_width="@dimen/nc_left_column_width"
+		 android:layout_height="@dimen/zhl_item_height"
+    android:orientation="horizontal" 
+    >
+    <TextView
+         android:id="@+id/nc_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="指标名称"
+        android:textColor="@color/black"
+        android:textSize="15dp" 
+        android:layout_marginRight="2dp"
+        />
+    <ImageView 
+         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/divider_hor"
+        android:layout_alignParentRight="true"
+        />
+        <ImageView 
+         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@mipmap/divider"
+        android:layout_alignParentBottom="true"
+        />
+ 
+</RelativeLayout>
+                    <ListView
+                        android:id="@+id/nc_left_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:footerDividersEnabled="false"
+                        android:fadingEdge="none"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdgeLength="0dip"
+                    android:scrollbars="none" >
+
+                    <!-- 右侧最外层布局 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/lineralayout_right_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/zhl_item_height"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+      
+                        <!-- 右侧列表 -->
+
+                        <ListView
+                            android:id="@+id/nc_right_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:childDivider="#00000000"
+                            android:divider="#00000000"
+                            android:drawSelectorOnTop="false"
+                            android:fadingEdge="none"
+                            android:footerDividersEnabled="false"
+                            android:scrollbars="none"
+                          
+                            android:scrollingCache="false" >
+                        </ListView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+    
+</LinearLayout>
+
+            
+        </RelativeLayout>
+
+  
+    </FrameLayout>
+
+</RelativeLayout>

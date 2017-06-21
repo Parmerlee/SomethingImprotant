@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/pop_left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/ic_popup_arrow_left1" />
+
+            <TextView
+                android:id="@+id/pop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/default_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/pop_right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_popup_arrow_right1" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/pop_viewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.bonc.mobile.hbmclient.view.StickyHorizontalScrollView
+                android:id="@+id/hor_pop_barChart"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/pop_graph"
+                    android:layout_width="500dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/pop_bar_layout"
+                    android:layout_width="500dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
+                <com.bonc.mobile.hbmclient.view.BarChartView
+                    android:id="@+id/pop_barChart"
+                    android:layout_width="500dp"
+                    android:layout_height="@dimen/default_pop_height"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_pop_height"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+					<!--标题栏       列名        第一行-->
+                    <LinearLayout
+                        android:id="@+id/pop_list_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:minHeight="25dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/img_everyday_develop_listview_top" />
+
+                    <!-- 右侧列表 -->
+
+                    <ListView
+                        android:id="@+id/pop_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:childDivider="#00000000"
+                        android:divider="@mipmap/divider"
+                        android:drawSelectorOnTop="false"
+                        android:fadingEdge="none"
+                        android:footerDividersEnabled="true"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" >
+                    </ListView>
+                </LinearLayout>
+            </com.bonc.mobile.hbmclient.view.StickyHorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+            </HorizontalScrollView>
+        </ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>

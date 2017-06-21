@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/id_left"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_basic_view_module_pss_month_sales_half" />
+
+    <include
+        android:id="@+id/id_right"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_basic_view_module_pss_month_sales_half" />
+</LinearLayout>

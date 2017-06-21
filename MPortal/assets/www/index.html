@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jue v1.0</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="stylesheet" href="css/jue.min.css">
+<!--    <link rel="stylesheet" href="css/test.css">-->
+
+</head>
+<body>
+<div id=aside_container></div>
+<div id=section_container>
+    <section id="index_section" class="active">
+    <header>
+        <nav class="left">
+            <a href="#" data-icon="undo" id="btn_back">返回</a>
+        </nav>
+        <nav class="right">
+            <a href="#" class="icon share" id="btn_share" ></a>
+        </nav>
+        <h1 class="title" style="background-color:#2573fe">帮助</h1>
+    </header>
+    <article class="active" data-scroll="true">
+    	<ul class="list ">
+            <li>
+                <strong >如何在【掌分应用门户】中进行4A认证？</strong>
+                <a></a>
+                <p>点击【掌分应用门户】->【重新认证】如图：</p>
+                <div style="text-align: center">
+                    <img src="img/1.png" width=100% >
+                </div>
+                <strong >常见问题：</strong>
+                <a></a>
+                <a>1、4A认证时，提示“主账号不存在:null”？</a>
+                <div style="text-align: left">
+                    <img src="img/2.png" width=50% >
+                </div>
+                <p>答：请联系管理员核实自己的4A账号是否为有效4A账号，然后重新输入正确的4A账号、密码、手机号。</p>
+                <a></a>
+                <a>2、出现提示“用户名或密码错误，还有X次尝试的机会”？</a>
+                <div style="text-align: left">
+                    <img src="img/3.png" width=80% >
+                </div>
+                <p>答：如果已经忘记手势码，请点击【重新认证】按钮，重新认证。</p>
+                <a></a>
+                <a>3、提示“由于您输入密码错误次数太多，账号已被锁定。请联系...”？</a>
+                <a></a>
+                <div style="text-align: left">
+                    <img src="img/4.png" width=90% >
+                </div>
+                <p>答：请联系管理员，申请解锁4A账号。</p>
+                <a></a>
+                <a>4、提示“8”？</a>
+                <div style="text-align: left">
+                    <img src="img/5.png" width=15% >
+                </div>
+                <p>答：重新输入正确的4A账号、密码、手机号。</p>
+                <a></a>
+                <a>5、提示“与4A通信错误”？</a>
+                <div style="text-align: left">
+                    <img src="img/6.png" width=35% >
+                </div>
+                <p>答：卸载【掌分应用门户】，重新下载安装【掌分应用门户】。</p>
+                <a></a>
+                <a>6、首次4A认证时，提示“服务器数据异常”？</a>
+                <div style="text-align: left">
+                    <img src="img/7.png" width=35% >
+                </div>
+                <p>答：请联系管理员。</p>
+                <a></a>
+                <a>7、掌分图标灰色？</a>
+                <p>答：请联系管理员，申请掌分权限。</p>
+                <a></a>
+                <a>8、弹出"菜单配置数据错误"提示框？</a>
+                <div style="text-align: left">
+                    <img src="img/8.png" width=35% >
+                    <img src="img/10.png" width=50% >
+                </div>
+                <p>答：点击【设置】->【应用】->【掌上分析展现系统】->【权限】->【存储空间】,打开存储权限。</p>
+                <a></a>
+                <a>9、地市日报一片空白，没有任何数据？</a>
+                <a></a>
+                <p>答：请联系本地管理员，申请本地市日报权限。</p>
+                <a></a>
+                <a>10、门户4A验证通过,点击掌分图标进入掌分报用户初始化错误？</a>
+                <a></a>
+                <div style="text-align: left">
+                    <img src="img/9.png" width=50% >
+                </div>
+                <a></a>
+                <p>答：点击【文件管理】->【内部存储】，删除【chinamobile】。</p>
+            </li>
+        </ul>        
+    </article>
+    </section>        
+</div>
+<script type="text/javascript" src="js/lib/zepto.js"></script>
+<script type="text/javascript" src="js/lib/iscroll.js"></script>
+<script type="text/javascript" src="js/lib/template.min.js"></script>
+<script type="text/javascript" src="js/lib/jue.min.js"></script>
+<script type="text/javascript" src="js/lib/zepto.touch2mouse.js"></script>
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>

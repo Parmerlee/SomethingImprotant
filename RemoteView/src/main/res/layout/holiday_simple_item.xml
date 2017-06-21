@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/holiday_simple_item_time_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="#4F5F6F"
+            android:textSize="@dimen/textSize_top_item" />
+
+        <TextView
+            android:id="@+id/holiday_simple_item_sum_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:textColor="#4F5F6F"
+            android:textSize="@dimen/textSize_top_item" />
+
+        <TextView
+            android:id="@+id/holiday_simple_item_sum_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#4F5F6F"
+            android:textSize="@dimen/textSize_top_item" />
+
+        <TextView
+            android:id="@+id/holiday_simple_item_mark2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="● 今年值"
+            android:textColor="#2DC0E8"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/holiday_simple_item_mark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="● 去年值"
+            android:textColor="#DAE1E8"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp" >
+
+        <com.bonc.mobile.common.chart.TwoBarChartView
+            android:id="@+id/holiday_simple_item_barLineChartView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</LinearLayout>

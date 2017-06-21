@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/combie_ac_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <com.bonc.mobile.hbmclient.view.StickyHorizontalScrollView
+        android:id="@+id/combie_ac_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/combie_ac_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <include layout="@layout/chart_title_layout_include" />            
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.StickyHorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/cur_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|fill_horizontal"
+        android:gravity="bottom|center_horizontal" >
+
+        <Button
+            android:id="@+id/cur_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:shadowColor="#ff4498f0"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="选择日期"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/cur_date_btn"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/button_grey"
+            android:gravity="center"
+            android:text="----/--/--"
+            android:textColor="@color/blue" />
+        
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|right" >
+            <include layout="@layout/share_button" />
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/zhl_item_height"
+    android:minHeight="@dimen/zhl_item_height"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/zhl_right_static"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zhl_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

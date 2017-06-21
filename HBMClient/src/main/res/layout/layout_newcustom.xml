@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <!-- body -->
+
+    <RelativeLayout
+        android:id="@+id/everyday_development_top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="36dp" >
+
+        <include
+            android:id="@+id/id_title"
+            layout="@layout/business_outlets_simple_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/id_title"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_shape"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/kpiName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="----"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/divider" />
+
+            <LinearLayout
+                android:id="@+id/netpoit_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/nc_left_column_width"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/title_lineralayout"
+                        android:layout_width="@dimen/nc_left_column_width"
+                        android:layout_height="@dimen/zhl_item_height"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/nc_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2dp"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/divider_hor" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@mipmap/divider" />
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/nc_left_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:fadingEdge="none"
+                        android:footerDividersEnabled="false"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdgeLength="0dip"
+                    android:scrollbars="none" >
+
+                    <!-- 右侧最外层布局 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/lineralayout_right_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/zhl_item_height"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <!-- 右侧列表 -->
+
+                        <ListView
+                            android:id="@+id/nc_right_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:childDivider="#00000000"
+                            android:divider="#00000000"
+                            android:drawSelectorOnTop="false"
+                            android:fadingEdge="none"
+                            android:footerDividersEnabled="false"
+                            android:scrollbars="none"
+                            android:scrollingCache="false" >
+                        </ListView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_button_single" />
+
+</RelativeLayout>

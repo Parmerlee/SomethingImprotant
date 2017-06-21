@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bk_announcement_black_bg" >
+
+    <com.bonc.mobile.hbmclient.state.view_switcher.AnnouncementSwitcher
+        android:id="@+id/id_announcementswitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="53dp" />
+    <ImageView
+        android:id="@+id/closebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="27dip"
+        android:src="@mipmap/img_icon_close" />
+
+</RelativeLayout>

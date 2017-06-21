@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0" >
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/name_4a"
+            android:background="@drawable/round_shape_edit"
+            android:hint="输入4A帐号"
+            android:inputType="text"
+            android:minHeight="@dimen/common_padding_30dp"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/pass_4a"
+            android:background="@drawable/round_shape_edit"
+            android:hint="输入4A密码"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/common_padding_30dp"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/name"
+            android:background="@drawable/round_shape_edit"
+            android:hint="输入手机号"
+            android:inputType="phone"
+            android:minHeight="@dimen/common_padding_30dp"/>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/vcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/round_shape_edit"
+            android:hint="输入动态码"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/get_vcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/button_blue2"
+            android:onClick="onClick"
+            android:text="@string/get_vcode"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</TableLayout>

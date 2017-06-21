@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/business_outlets_simple_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="11" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                layout="@layout/business_outlets_kpi_left" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                layout="@layout/business_outlets_kpi_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_button_single" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/system"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bk_main_bg">
+    
+    <!-- 底部工具栏 -->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/bottom_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+        <!-- 重置数据 -->
+        <ImageView
+            android:id="@+id/main_reset_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bottom_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/btn_main_reset"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 更新数据 -->
+        <ImageView
+            android:id="@+id/main_update_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/btn_resetdata" />
+
+        <!-- 返回 -->
+        <ImageView
+            android:id="@+id/main_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bottom_background"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:visibility="gone"
+            android:src="@drawable/btn_back" />
+
+        <!-- 公告 -->
+        <ImageView
+            android:id="@+id/main_count_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="37dip"
+            android:layout_marginTop="15dip"
+            android:src="@mipmap/img_announcement_count"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/main_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="42dip"
+            android:layout_marginTop="15dip"
+            android:text="0" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        >
+        
+        <!-- title -->
+        <RelativeLayout
+            android:id="@+id/main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:layout_marginTop="1px"
+            >
+            <ImageView
+                android:id="@+id/main_title_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+        
+        <LinearLayout
+        	android:id="@+id/main_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/main_title"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            >
+            <ListView
+                android:id="@+id/main_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dp"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none"
+                android:scrollingCache="false" 
+                android:divider="@mipmap/divider">
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

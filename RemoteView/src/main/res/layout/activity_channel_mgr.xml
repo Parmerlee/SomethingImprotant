@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_second" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/icon_add"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/icon_del"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/kpi_mgr"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/icon_kpi_mgr"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_hor" />
+    
+    <com.mobeta.android.dslv.DragSortListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@mipmap/divider"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@+id/drag_handle"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6" 
+         android:cacheColorHint="#00000000"
+        />
+
+</LinearLayout>

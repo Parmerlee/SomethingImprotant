@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kpi_data_col_width">100dp</dimen>
+    <dimen name="kpi_trend_col_width">80dp</dimen>
+    <dimen name="kpi_rel_col_width">50dp</dimen>
+    <dimen name="kpi_data_padding">20dp</dimen>
+    <dimen name="topn_item_width">120dp</dimen>
+    <dimen name="topn_item_height">130dp</dimen>
+</resources>

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    sourceSets {
+        main {
+
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion '25.0.2'
+//    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.bonc.mobile.hbmclient"
+        minSdkVersion 14
+        targetSdkVersion 17
+        versionCode 2017011701
+//        versionCode 2015011701
+        versionName "2.1 2017011701"
+    }
+    buildTypes {
+        debug {
+//            proguardFile 'E:/Jing/worksoft/sdk/tools/proguard/proguard-android.txt'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            android.applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        //apk name : name + version + time
+//                        def fileName = "HBMClient-${defaultConfig.versionName}-${defaultConfig.versionCode}-${releaseTime()}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+//            proguardFile 'E:/Jing/worksoft/sdk/tools/proguard/proguard-android.txt'
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMddHHMM", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':MCommon')
+    compile files('libs/cordova-6.2.0-dev.jar')
+    compile 'com.upplication:cordova-java:6.1.2'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+}

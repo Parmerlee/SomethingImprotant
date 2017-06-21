@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/text_title_style"
+        android:text="当月累计销量"/>
+	<LinearLayout 
+	    android:id="@+id/id_combine_container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:weightSum="10"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:id="@+id/id_value"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="3"
+	        android:singleLine="true"
+	        android:gravity="right"
+	        android:textAppearance="@style/text_value_style"
+	        android:text="--"/>
+	    <TextView 
+	        android:id="@+id/id_unit"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="7"
+	        android:gravity="bottom"
+	        android:textAppearance="@style/text_unit_style"
+	        android:text="万台"/>
+	</LinearLayout>
+</LinearLayout>

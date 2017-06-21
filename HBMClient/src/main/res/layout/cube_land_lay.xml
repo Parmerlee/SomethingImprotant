@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_cube_land_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+                <RelativeLayout
+                android:id="@+id/ll_dev_area_barzzz"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+          
+                android:background="@color/zeven_list_color" >
+
+          
+                <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="0dip"
+    >
+    
+
+                <TextView
+                    android:id="@+id/tv_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:shadowColor="#ffdddddd"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="0"
+                    android:text="■ 单位："
+                    android:textColor="#ff1b7FE6"
+                    android:textSize="15sp" />
+       <TextView
+                    android:id="@+id/tv_w_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:shadowColor="#ffdddddd"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="0"
+                    android:text=""
+                    android:textColor="#ff1b7FE6"
+                    android:textSize="15sp" />
+</LinearLayout>
+
+                <!-- 柱图显示 add柱图view -->
+
+                <LinearLayout
+                    
+                    android:id="@+id/ll_dev_area_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" 
+                      android:layout_marginTop="15sp"
+                    >
+                </LinearLayout>
+            </RelativeLayout>
+
+</RelativeLayout>

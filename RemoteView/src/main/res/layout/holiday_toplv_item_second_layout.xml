@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/holiday_toplv_item_second_topview"
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/holiday_toplv_item_second_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/holiday_toplv_item_second_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|left"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/myprogress_ll"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_weight="3"
+            android:maxHeight="25dp"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/myprogress_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textview_border1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/myprogress_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_border1" />
+
+            <TextView
+                android:id="@+id/myprogress_str"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <com.bonc.mobile.remoteview.common.MyPro
+            android:id="@+id/holiday_toplv_item_pro"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_weight="3"
+            android:maxHeight="15dp"
+            android:padding="2dp"
+            android:visibility="gone" >
+        </com.bonc.mobile.remoteview.common.MyPro>
+
+        <com.bonc.mobile.remoteview.activity.MyProgressBar
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_weight="3"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:maxHeight="15dp"
+            android:padding="2dp"
+            android:progressDrawable="@drawable/progressbar_1"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/holiday_toplv_item_second_view"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="3"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:maxHeight="15dp"
+            android:padding="2dp"
+            android:progressDrawable="@drawable/progressbar_1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_weight="3"
+            android:background="@drawable/textview_border"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="环比："
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/holiday_toplv_item_second_percent11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

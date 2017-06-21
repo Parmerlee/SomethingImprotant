@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/title_top"
+        layout="@layout/title_second" />
+
+    <!-- content -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/title_top" 
+        android:scrollbars="@null">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_layout"
+            android:divider="@mipmap/divider"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning" >
+
+            <LinearLayout
+                android:id="@+id/broad_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@mipmap/divider"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end" >
+
+                <include
+                    android:id="@+id/broad_order_title"
+                    layout="@layout/broad_order_title" />
+
+                <include
+                    android:id="@+id/broad_order_up"
+                    layout="@layout/broad_order_up" />
+
+                <include
+                    android:id="@+id/broad_order_down"
+                    layout="@layout/broad_order_up" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/broad_handler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@mipmap/divider"
+                android:dividerPadding="5dp"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end" >
+
+                <include
+                    android:id="@+id/broad_handler_title"
+                    layout="@layout/broad_handler_title" />
+
+                <include
+                    android:id="@+id/broad_handler_up"
+                    layout="@layout/broad_order_up" />
+
+                <include
+                    android:id="@+id/broad_handler_down"
+                    layout="@layout/broad_order_up" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/broad_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@mipmap/divider"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end" >
+
+                <include
+                    android:id="@+id/broad_channel_title"
+                    layout="@layout/broad_channel_title" />
+
+                <include
+                    android:id="@+id/broad_channel_up"
+                    layout="@layout/broad_order_up" />
+
+                <include
+                    android:id="@+id/broad_channel_down"
+                    layout="@layout/broad_order_up" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/divider" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- bottom -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D7DDE5"
+        android:padding="3dp" >
+
+        <include
+            android:id="@+id/kpi_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            layout="@layout/kpi_button_panel" />
+    </RelativeLayout>
+
+</RelativeLayout>

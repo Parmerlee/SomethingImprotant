@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<setting>
+  <app_name>湖北移动掌上分析展现系统</app_name> 
+  <area>1001</area> 
+  <capital>188</capital>
+  <db>data/db/data.db</db> 
+  <tmp>temp</tmp> 
+  <!--  <public description="外网地址">http://192.168.1.106:8080/AnhuiMobile2/</public>   -->
+  <!--  <public description="外网地址">http://192.168.2.206:8080/AnhuiMobile2/</public> --> 
+  <!--  <public description="外网地址">http://118.186.205.200:8080/AnhuiMobile2/</public>  -->  
+  <!-- <public description="外网地址">http://221.130.119.89:8070/AnhuiMobile2/</public>  --> 
+  <!-- <public description="外网地址">http://192.168.6.83:8080/AnhuiMobile2/</public>  -->
+  <bonc description="动漫中心外网">http://219.148.7.13:8085/Analy/</bonc>
+  <private description="内网地址">http://192.168.170.14:8080/Analy/</private> 
+  <webService description="webService相对于服务器的地址">services/SynchroDataWebService</webService> 
+  <httpService description="http相对于服务器的地址"></httpService>
+  <dbService description="DB数据ZIP包同步地址">action/Download</dbService>
+  <upload description="文件上传相对于服务器的地址">upload/UploadFile.action</upload> 
+  <!-- http://219.148.7.13:8083/Analy/
+  http://192.168.3.217:8080/mytomcat/
+  北京本地http://192.168.6.28:8089/mytomcat/
+   -->
+</setting>

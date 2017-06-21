@@ -1,0 +1,30 @@
+<resources>
+
+      <!-- default padding/margin size-->
+    <dimen name="common_padding_2dp">2dp</dimen>
+    <dimen name="common_padding_3dp">3dp</dimen>
+    <dimen name="common_padding_5dp">5dp</dimen>
+    <dimen name="common_padding_8dp">8dp</dimen>
+    <dimen name="common_padding_10dp">10dp</dimen>
+    <dimen name="common_padding_30dp">30dp</dimen>
+
+    <!-- default font size-->
+    <dimen name="common_font_8sp">8sp</dimen>
+    <dimen name="common_font_12sp">12sp</dimen>
+    <dimen name="common_font_14sp">14sp</dimen>
+    <dimen name="common_font_15sp">15sp</dimen>
+    <dimen name="common_font_16sp">16sp</dimen>
+    <dimen name="common_font_18sp">18sp</dimen>
+    <dimen name="common_font_20sp">20sp</dimen>
+
+
+    <!-- MPortal only-->
+    <dimen name="login_marginTop">60dp</dimen>
+    <dimen name="login_marginLeft">60dp</dimen>
+    <dimen name="login_marginBottom">28dp</dimen>
+    <!-- 登录统计时间框宽度-->
+    <dimen name="login_borderWidth">120dp</dimen>
+
+    <!-- 注册界面 中间宽度-->
+    <dimen name="login_loginWidth">220dp</dimen>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:background="@mipmap/icon_title_small_blue"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/c3bdbd" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="关联"
+        android:textAppearance="@style/mainkpi_title_style" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/c3bdbd" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="趋势图"
+        android:textAppearance="@style/mainkpi_title_style" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/c3bdbd" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="当日值"
+        android:textAppearance="@style/mainkpi_title_style" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/c3bdbd" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="日环比"
+        android:textAppearance="@style/mainkpi_title_style" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/c3bdbd" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="日累计值"
+        android:textAppearance="@style/mainkpi_title_style" />
+
+</LinearLayout>

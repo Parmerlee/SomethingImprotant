@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path
+        name="updata.apk"
+        path="/tmp/" />
+    <external-path
+        name="updata.apk"
+        path="/tmp/" />
+</paths>

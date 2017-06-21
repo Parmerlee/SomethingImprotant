@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bonc.mobile.hbmclient.view.BoardHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_hor_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <common.share.lwg.util.builder.mainkpi.LTitleBuilder
+            android:id="@+id/id_title_right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/level_title_height"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/listContainerRight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.bonc.mobile.hbmclient.view.BoardHorizontalScrollView>

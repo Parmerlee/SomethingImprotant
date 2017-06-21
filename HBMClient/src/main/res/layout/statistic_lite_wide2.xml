@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8884acd0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statistic_lite_key1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="10px"
+        android:singleLine="true"
+        android:tag="key"
+        android:textColor="#ff000000"
+        android:textScaleX="1"
+        android:textSize="16sp" />
+
+    <com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini
+        android:id="@+id/statistic_num_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10px"
+        android:layout_marginRight="13px"
+        android:gravity="right"
+        android:tag="value" >
+    </com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_split_lite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statistic_lite_key2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="14px"
+            android:tag="key"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini
+            android:id="@+id/statistic_numb_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="13px"
+            android:gravity="right"
+            android:tag="value" >
+        </com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statistic_lite_key3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="14px"
+            android:tag="key"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini2
+            android:id="@+id/statistic_num_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="13px"
+            android:gravity="right"
+            android:tag="value" >
+        </com.bonc.mobile.hbmclient.terminal.view.NumberCounterViewMini2>
+    </LinearLayout> 
+
+</merge>

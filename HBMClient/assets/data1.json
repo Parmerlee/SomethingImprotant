@@ -1,0 +1,365 @@
+{
+    "time": "20170109",
+    "flag": true,
+    "areaCode": [
+        {
+            "AREA_CODE": "HB.XG",
+            "AREA_NAME": "孝感"
+        }
+    ],
+    "preTop10": [],
+    "preEnd10": [],
+    "top10": [
+        {
+            "RANK": 1,
+            "FEE_NAME": "4G飞享套餐18元档2016版A(语音)",
+            "TOTAL_VALUE": 572222,
+            "DAILY_VALUE": 838,
+            "TRANS_VALUE": 10,
+            "PECENT": 45.126
+        },
+        {
+            "RANK": 2,
+            "FEE_NAME": "4G语音18元套餐2015版",
+            "TOTAL_VALUE": 200640,
+            "DAILY_VALUE": 386,
+            "TRANS_VALUE": 3,
+            "PECENT": 15.823
+        },
+        {
+            "RANK": 3,
+            "FEE_NAME": "4G飞享套餐18元档2016版",
+            "TOTAL_VALUE": 8861,
+            "DAILY_VALUE": 70,
+            "TRANS_VALUE": 4,
+            "PECENT": 0.699
+        },
+        {
+            "RANK": 4,
+            "FEE_NAME": "4G语音28元套餐2015版",
+            "TOTAL_VALUE": 69229,
+            "DAILY_VALUE": 63,
+            "TRANS_VALUE": 0,
+            "PECENT": 5.46
+        },
+        {
+            "RANK": 5,
+            "FEE_NAME": "4G飞享套餐28元档2016版A(语音)",
+            "TOTAL_VALUE": 88708,
+            "DAILY_VALUE": 40,
+            "TRANS_VALUE": 0,
+            "PECENT": 6.996
+        },
+        {
+            "RANK": 6,
+            "FEE_NAME": "4G飞享套餐28元档2016版B(语音)",
+            "TOTAL_VALUE": 38740,
+            "DAILY_VALUE": 39,
+            "TRANS_VALUE": 0,
+            "PECENT": 3.055
+        },
+        {
+            "RANK": 7,
+            "FEE_NAME": "4G语音48元套餐2015版",
+            "TOTAL_VALUE": 28571,
+            "DAILY_VALUE": 24,
+            "TRANS_VALUE": 0,
+            "PECENT": 2.253
+        },
+        {
+            "RANK": 8,
+            "FEE_NAME": "4G飞享套餐18元档2016版B(语音)",
+            "TOTAL_VALUE": 14712,
+            "DAILY_VALUE": 18,
+            "TRANS_VALUE": 0,
+            "PECENT": 1.16
+        },
+        {
+            "RANK": 9,
+            "FEE_NAME": "4G飞享套餐38元档2015版",
+            "TOTAL_VALUE": 18709,
+            "DAILY_VALUE": 17,
+            "TRANS_VALUE": 0,
+            "PECENT": 1.475
+        },
+        {
+            "RANK": 10,
+            "FEE_NAME": "4G飞享套餐58元档2015版",
+            "TOTAL_VALUE": 19944,
+            "DAILY_VALUE": 17,
+            "TRANS_VALUE": 0,
+            "PECENT": 1.573
+        }
+    ],
+    "msg": "开门红指标数据获取成功。",
+    "end10": [
+        {
+            "RANK": 74,
+            "FEE_NAME": "4G飞享套餐588元档2016版",
+            "TOTAL_VALUE": 16,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0,
+            "PECENT": 0.001
+        },
+        {
+            "RANK": 75,
+            "FEE_NAME": "语音短信不限量套餐338元版(五星级)",
+            "TOTAL_VALUE": 6,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0,
+            "PECENT": 0
+        },
+        {
+            "RANK": 76,
+            "FEE_NAME": "国内流量30MB",
+            "TOTAL_VALUE": 8,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 1,
+            "PECENT": 0.001
+        },
+        {
+            "RANK": 77,
+            "FEE_NAME": "国内流量70MB",
+            "TOTAL_VALUE": 17,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 1,
+            "PECENT": 0.001
+        },
+        {
+            "RANK": 78,
+            "FEE_NAME": "国内流量150MB",
+            "TOTAL_VALUE": 10,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 0,
+            "PECENT": 0.001
+        },
+        {
+            "RANK": 79,
+            "FEE_NAME": "国内流量500MB",
+            "TOTAL_VALUE": 51,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 3,
+            "PECENT": 0.004
+        },
+        {
+            "RANK": 80,
+            "FEE_NAME": "国内流量1G",
+            "TOTAL_VALUE": 54,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 2,
+            "PECENT": 0.004
+        },
+        {
+            "RANK": 81,
+            "FEE_NAME": "国内流量2G产品",
+            "TOTAL_VALUE": 54,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 1,
+            "PECENT": 0.004
+        },
+        {
+            "RANK": 82,
+            "FEE_NAME": "1G流量日套餐",
+            "TOTAL_VALUE": 112,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 38,
+            "PECENT": 0.009
+        },
+        {
+            "RANK": 83,
+            "FEE_NAME": "500M流量日套餐",
+            "TOTAL_VALUE": 97,
+            "DAILY_VALUE": 0,
+            "TRANS_VALUE": 29,
+            "PECENT": 0.008
+        }
+    ]
+}
+
+
+[
+    {
+        "kpi_code": "720",
+        "curday_value": "6274.000000",
+        "dim_key": "T6965",
+        "tank_change": "0",
+        "pm_curday_value": "7464.000000",
+        "pm_curday_value_dr": "0.171500",
+        "term_type_name": "OPPOR9s",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP01终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.093700"
+    },
+    {
+        "kpi_code": "730",
+        "curday_value": "5770.000000",
+        "dim_key": "T6170",
+        "tank_change": "0",
+        "pm_curday_value": "2210.000000",
+        "pm_curday_value_dr": "0.050800",
+        "term_type_name": "奥乐AR9",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP02终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.086200"
+    },
+    {
+        "kpi_code": "740",
+        "curday_value": "5245.000000",
+        "dim_key": "T7104",
+        "tank_change": "0",
+        "pm_curday_value": "3522.000000",
+        "pm_curday_value_dr": "0.080900",
+        "term_type_name": "vivoX9",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP03终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.078300"
+    },
+    {
+        "kpi_code": "750",
+        "curday_value": "5070.000000",
+        "dim_key": "T6851",
+        "tank_change": "0",
+        "pm_curday_value": "1269.000000",
+        "pm_curday_value_dr": "0.029100",
+        "term_type_name": "赛博宇华SOP-N1(16G)",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP04终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.075700"
+    },
+    {
+        "kpi_code": "760",
+        "curday_value": "4402.000000",
+        "dim_key": "T7074",
+        "tank_change": "0",
+        "pm_curday_value": "1243.000000",
+        "pm_curday_value_dr": "0.028500",
+        "term_type_name": "长虹T02(8G)",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP05终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.065700"
+    },
+    {
+        "kpi_code": "770",
+        "curday_value": "4302.000000",
+        "dim_key": "T7112",
+        "tank_change": "0",
+        "pm_curday_value": "2249.000000",
+        "pm_curday_value_dr": "0.051700",
+        "term_type_name": "OPPOA57",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP06终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.064200"
+    },
+    {
+        "kpi_code": "780",
+        "curday_value": "3910.000000",
+        "dim_key": "T6173",
+        "tank_change": "0",
+        "pm_curday_value": "1265.000000",
+        "pm_curday_value_dr": "0.029000",
+        "term_type_name": "长虹S03",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP07终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.058400"
+    },
+    {
+        "kpi_code": "790",
+        "curday_value": "3645.000000",
+        "dim_key": "T6962",
+        "tank_change": "0",
+        "pm_curday_value": "4823.000000",
+        "pm_curday_value_dr": "0.110800",
+        "term_type_name": "OPPOA59s",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP08终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.054400"
+    },
+    {
+        "kpi_code": "800",
+        "curday_value": "2886.000000",
+        "dim_key": "T7214",
+        "tank_change": "0",
+        "pm_curday_value": "0.000000",
+        "pm_curday_value_dr": "0.000000",
+        "term_type_name": "vivoY66",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP09终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.043100"
+    },
+    {
+        "kpi_code": "810",
+        "curday_value": "2608.000000",
+        "dim_key": "T7078",
+        "tank_change": "0",
+        "pm_curday_value": "1654.000000",
+        "pm_curday_value_dr": "0.038000",
+        "term_type_name": "惠族HUIZUUY21",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP10终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.038900"
+    },
+    {
+        "kpi_code": "820",
+        "curday_value": "2605.000000",
+        "dim_key": "T6952",
+        "tank_change": "0",
+        "pm_curday_value": "3941.000000",
+        "pm_curday_value_dr": "0.090500",
+        "term_type_name": "vivoY55A",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP11终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.038900"
+    },
+    {
+        "kpi_code": "830",
+        "curday_value": "2577.000000",
+        "dim_key": "T6687",
+        "tank_change": "0",
+        "pm_curday_value": "2678.000000",
+        "pm_curday_value_dr": "0.061500",
+        "term_type_name": "欧博信V6",
+        "area_code": "HB",
+        "area_name": "湖北",
+        "kpi_name": "TOP12终端机型当月累计销量",
+        "op_time": "20170111",
+        "area_level": "1",
+        "curday_value_dr": "0.038500"
+    },
+    {
+        "kpi_code": "840",
+        "curday_value": "2474.000000",
+        "dim_key": "T6329",
+        "tank_ch

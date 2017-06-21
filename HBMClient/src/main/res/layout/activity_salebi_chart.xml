@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_second" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rank_legend1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1088c0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rank_legend2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f89817"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.bonc.mobile.common.view.SimpleListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@mipmap/divider"
+            android:showDividers="middle" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom|left"
+    android:orientation="horizontal"
+    android:paddingTop="3dp"
+    android:showDividers="middle" >
+
+    <com.bonc.mobile.common.view.DataChooseButton
+        android:id="@+id/area_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:background="@mipmap/button_bg_white"
+        android:gravity="center_vertical|left"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:text="---"
+        android:textColor="#4F5F6F"
+        android:textSize="13sp" />
+
+    <com.bonc.mobile.common.view.DatePickerButton
+        android:id="@+id/date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_bg_white2"
+        android:gravity="center_vertical|left"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="---"
+        android:textColor="#4F5F6F"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/date_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:maxLines="2"
+        android:padding="2dp"
+        android:text="---"
+        android:textColor="#4F5F6F"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

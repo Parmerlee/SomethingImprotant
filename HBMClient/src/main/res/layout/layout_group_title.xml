@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleContainer"
+    android:layout_width="match_parent"    
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_rectangle_gray_hor_long" >
+
+    <TextView
+        android:id="@+id/id_text"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true" />
+    <RelativeLayout 
+        android:id="@+id/pbContainer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"            
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+    <LinearLayout 
+        android:id="@+id/id_left_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="当前值" />
+        <TextView
+            android:id="@+id/id_left_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="10000" />     
+    </LinearLayout>
+        <ProgressBar 
+            android:id="@+id/id_progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/id_right_mark"
+            android:layout_toRightOf="@+id/id_left_mark"
+            android:max="100"
+            android:background="@drawable/border_grey"      
+            android:progressDrawable="@drawable/progressbar_total"
+            style="?android:attr/progressBarStyleHorizontal" />
+        <TextView
+            android:id="@+id/id_pb_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/text_small_style" />
+    <LinearLayout 
+        android:id="@+id/id_right_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="目标值" />
+        <TextView
+            android:id="@+id/id_right_value"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="10000" />     
+    </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

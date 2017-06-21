@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_main_kpi_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="11" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:orientation="vertical" >
+
+                <com.bonc.mobile.hbmclient.builder.levelkpi.TitleProduct
+                    android:id="@+id/id_title_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="29.5dp"
+                    android:orientation="horizontal" />
+
+                <com.bonc.mobile.hbmclient.builder.levelkpi.LevelKpiItemProduct
+                    android:id="@+id/main_kpi_content_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/icon_main_kpi_background"
+                    android:orientation="horizontal" />
+
+                <ExpandableListView
+                    android:id="@+id/list_view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:childDivider="@mipmap/divider2"
+                    android:drawSelectorOnTop="false"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:groupIndicator="@null"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none"
+                    android:scrollingCache="false" >
+                </ExpandableListView>
+            </LinearLayout>
+
+            <com.bonc.mobile.hbmclient.view.BoardHorizontalScrollView
+                android:id="@+id/id_hor_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dip"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <com.bonc.mobile.hbmclient.builder.levelkpi.TitleProduct
+                        android:id="@+id/id_title_right"
+                        android:layout_width="fill_parent"
+                        android:layout_height="29.5dp"
+                        android:orientation="horizontal" />
+
+                    <com.bonc.mobile.hbmclient.builder.levelkpi.LevelKpiItemProduct
+                        android:id="@+id/main_kpi_content_right"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/icon_main_kpi_background"
+                        android:orientation="horizontal" />
+
+                    <ExpandableListView
+                        android:id="@+id/list_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:childDivider="@mipmap/divider2"
+                        android:drawSelectorOnTop="false"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0dp"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="false"
+                        android:groupIndicator="@null"
+                        android:listSelector="#00000000"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" >
+                    </ExpandableListView>
+                </LinearLayout>
+            </com.bonc.mobile.hbmclient.view.BoardHorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_relative_kpi_button" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/product_topn"
+                layout="@layout/topn_hor_view" />
+
+            <com.bonc.mobile.common.view.SimpleListView
+                android:id="@+id/product_part2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/topn_item_bg"
+                android:orientation="vertical" />
+
+            <include
+                android:id="@+id/product_bar_chart1"
+                layout="@layout/bar_chart_panel" />
+
+            <include
+                android:id="@+id/product_bar_chart2"
+                layout="@layout/bar_chart_panel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue_grey" />
+
+            <include
+                android:id="@+id/fee_topn"
+                layout="@layout/topn_hor_view" />
+
+            <com.bonc.mobile.common.view.SimpleListView
+                android:id="@+id/fee_part2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/topn_item_bg"
+                android:orientation="vertical" />
+
+            <include
+                android:id="@+id/fee_bar_chart1"
+                layout="@layout/bar_chart_panel" />
+
+            <include
+                android:id="@+id/fee_bar_chart2"
+                layout="@layout/bar_chart_panel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue_grey" />
+
+            <include
+                android:id="@+id/loss_topn"
+                layout="@layout/topn_hor_view" />
+
+            <include
+                android:id="@+id/inactive_topn"
+                layout="@layout/topn_hor_view" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/kpi_button_panel" />
+
+</LinearLayout>

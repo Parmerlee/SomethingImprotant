@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bonc.mobile.hbmclient.view.SlideHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slideHolder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/id_sidemenu"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_sidemenu" />
+
+    <LinearLayout
+        android:id="@+id/id_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/id_mainkpi_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/icon_title_blue"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/id_navigator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_navigator"
+                android:gravity="center"
+                android:text="导航"
+                android:textColor="@color/navigator_color"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/id_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/id_navigator"
+                android:background="@mipmap/ic_share"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/logo_word_mon_dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="----"
+                android:textColor="#ffffff"
+                android:textSize="20dip" />
+
+            <com.bonc.mobile.hbmclient.view.DateRangeSwitchView2
+                android:id="@+id/id_date_range_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_menu_bg_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <Button
+                android:id="@+id/id_mm_button"
+                style="@style/title_group_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="终端分析" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/terminal_menu_divider_color" />
+
+            <Button
+                android:id="@+id/id_pss_button"
+                style="@style/title_group_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="进销存" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/terminal_menu_divider_color" />
+
+            <Button
+                android:id="@+id/id_unsale_button"
+                style="@style/title_group_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="滞销" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/terminal_menu_divider_color" />
+
+            <Button
+                android:id="@+id/id_unpack_button"
+                style="@style/title_group_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="拆包" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:background="@color/terminal_menu_divider_color" />
+
+            <Button
+                android:id="@+id/id_fg_button"
+                style="@style/title_group_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="窜货-月" />
+        </LinearLayout>
+
+        <com.bonc.mobile.hbmclient.view.ScrollViewGroup
+            android:id="@+id/id_scroll_viewgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.bonc.mobile.hbmclient.view.ScrollViewGroup>
+    </LinearLayout>
+
+</com.bonc.mobile.hbmclient.view.SlideHolder>

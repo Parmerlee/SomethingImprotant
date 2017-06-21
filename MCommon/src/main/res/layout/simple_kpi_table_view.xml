@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.bonc.mobile.common.kpi.SimpleKpiTitleRow
+            android:id="@+id/title_left"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@mipmap/icon_title_small_blue"
+            android:orientation="horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2DC0E8" />
+
+        <ListView
+            android:id="@+id/list_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#DEE1E2"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.bonc.mobile.common.kpi.SimpleKpiTitleRow
+                android:id="@+id/title_right"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/icon_title_small_blue"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2DC0E8" />
+
+            <ListView
+                android:id="@+id/list_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#DEE1E2"
+                android:dividerHeight="1dp"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

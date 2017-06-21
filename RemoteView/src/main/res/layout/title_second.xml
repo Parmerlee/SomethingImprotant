@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@mipmap/title_bg" >
+
+    <Button
+        android:id="@+id/id_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:background="@mipmap/icon_back"
+        android:gravity="center"
+        android:onClick="onClick" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/id_button_back"
+        android:textColor="#1b6e9a"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/reflesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/id_share"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/refresh"
+        android:visibility="gone" />
+
+    <include android:id="@+id/id_share" layout="@layout/share_button" />
+</RelativeLayout>

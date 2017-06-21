@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/search_title_tv" />
+
+        <RelativeLayout
+            android:id="@+id/kpi_panel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7DDE5"
+            android:padding="3dp" >
+
+            <include
+                android:id="@+id/kpi_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                layout="@layout/kpi_button_panel_new" />
+        </RelativeLayout>
+
+        <!-- 关联信息layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kpi_panel_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="关联信息" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scrollbars="@null" >
+
+                <com.bonc.mobile.common.view.FlowLayout
+                    android:id="@+id/search_fl_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 文字 -->
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/perfer_item" />
+
+                <!-- 左右联动listview -->
+
+                <com.bonc.mobile.common.kpi.KpiDataView
+                    android:id="@+id/data_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+                <!-- 柱状图 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="0dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_w"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#ffdddddd"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="0"
+                            android:text="■ 单位："
+                            android:textColor="#ff1b7FE6"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_w_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#ffdddddd"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="0"
+                            android:textColor="#ff1b7FE6"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <com.bonc.mobile.common.chart.BarChartView
+                        android:id="@+id/bar_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp" >
+                    </com.bonc.mobile.common.chart.BarChartView>
+                </RelativeLayout>
+
+                <!-- 折线图 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+
+                    <com.bonc.mobile.common.view.ACLineChartView
+                        android:id="@+id/line_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <!-- 饼状图 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:minHeight="200dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="QQQQQQQQQQQQQQ"
+                        android:padding="3dp"
+                        android:gravity="center" />
+
+                    <LinearLayout
+                        android:id="@+id/pie_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        layout="@layout/menu_left_bottom"
+        android:visibility="visible" />
+
+</RelativeLayout>

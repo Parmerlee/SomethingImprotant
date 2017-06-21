@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_kpi_area" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:weightSum="2" >
+
+        <!-- 全省最高 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/highest_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#101010" />
+
+            <TextView
+                android:id="@+id/highest_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#101010"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        <include layout="@layout/divider_ver" />
+        
+        <!-- 全省最低 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lowest_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#101010" />
+
+            <TextView
+                android:id="@+id/lowest_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#101010"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_hor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ffdddddd"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0"
+                android:text="■ 单位："
+                android:textColor="#ff1b7FE6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_w_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ffdddddd"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0"
+                android:text=""
+                android:textColor="#ff1b7FE6"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!-- 柱图显示 add柱图view -->
+
+        <com.bonc.mobile.common.chart.BarChartView
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.bonc.mobile.common.kpi.KpiDataView
+            android:id="@+id/data_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="36dp"
+            android:orientation="vertical" />
+
+        <include layout="@layout/kpi_button_panel" />
+    </RelativeLayout>
+
+</LinearLayout>

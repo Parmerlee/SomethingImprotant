@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zeven_list_color">
+
+    <TextView
+        android:id="@+id/rank_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="5dip"
+        android:background="@mipmap/rank01"
+        android:gravity="center"
+        android:scaleType="center"
+        android:text="1"
+        android:textColor="#FFFFFF" />
+
+    <com.bonc.mobile.hbmclient.terminal.view.MyTextView4Top20
+        android:id="@+id/rank_title"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/rank_num" />
+
+    <TextView
+        android:id="@+id/iv_up_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/rankup"
+        android:gravity="center"
+        android:scaleType="center"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="7sp" />
+
+    <LinearLayout
+        android:id="@+id/rank_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toLeftOf="@+id/iv_up_down"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/curr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="当月"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rank_curr_count1"
+                android:layout_width="48dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dip"
+                android:gravity="right"
+                android:text="123456"
+                android:textColor="#0061b1"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/curr_tai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="台"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text="上月"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rank_last_count2"
+                android:layout_width="48dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dip"
+                android:gravity="right"
+                android:text="123"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/last_tai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="台"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/rank_count"
+        android:layout_toRightOf="@+id/rank_title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="@mipmap/rank_progressbar_bk">
+
+            <com.bonc.mobile.hbmclient.terminal.view.MyProgressBar
+                android:id="@+id/rank_curr_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="false"
+                android:maxHeight="15dp"
+                android:minHeight="15dp"
+                android:padding="2dip"
+                android:progress="60"
+                android:progressDrawable="@drawable/progressbar_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="4dp"
+            android:background="@mipmap/rank_progressbar_bk">
+
+            <com.bonc.mobile.hbmclient.terminal.view.MyProgressBar
+                android:id="@+id/rank_last_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="false"
+                android:maxHeight="15dp"
+                android:minHeight="15dp"
+                android:padding="2dip"
+                android:progress="70"
+                android:progressDrawable="@drawable/progressbar_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

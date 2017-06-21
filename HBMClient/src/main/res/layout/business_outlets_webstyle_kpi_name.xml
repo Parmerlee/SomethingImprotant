@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:paddingLeft="15dp"
+    android:orientation="horizontal" >
+    <Button 
+        android:id="@+id/kpi1"
+        android:background="@mipmap/kpi_name_unfocus"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"/>
+    <Button 
+        android:id="@+id/kpi2"
+        android:background="@mipmap/kpi_name_unfocus"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"/>
+    <Button 
+        android:id="@+id/kpi3"
+        android:background="@mipmap/kpi_name_unfocus"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"/>
+    <Button 
+        android:id="@+id/kpi4"
+        android:background="@mipmap/kpi_name_unfocus"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_kpi_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/terminal_bg_repeat" >
+
+    <!-- 抬頭 -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rank_top20_bk"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ll_logo_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@mipmap/logo_mobile" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.6dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/provice_app_title"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/home_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:shadowColor="#ff000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 搜索框 -->
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:id="@+id/linearLayout_search"
+     android:orientation="horizontal"
+     android:layout_below="@+id/linearLayout1"
+     android:weightSum="2" >
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:paddingLeft="35dp"
+        android:layout_weight="1"
+        android:background="@mipmap/kpi_search_bg" > 
+        <EditText 
+            android:id="@+id/kpi_search_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/kpi_search_hint"
+             /> 
+      </LinearLayout>  
+      
+      <Button  
+        android:id="@+id/kpi_search_button"  
+        android:layout_width="120dp"  
+        android:layout_height="wrap_content"   
+        android:background="@mipmap/kpi_search_button"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1" />
+    </LinearLayout>
+    <!-- list列表 -->
+
+    <ListView
+        android:id="@+id/kpi_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@mipmap/home_list_divide"
+        android:layout_below="@+id/linearLayout_search">
+    </ListView>
+
+</RelativeLayout>

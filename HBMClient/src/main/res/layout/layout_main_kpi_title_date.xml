@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_mainkpi_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@mipmap/icon_title_blue"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Button
+        android:id="@+id/id_navigator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/icon_navigator"
+        android:gravity="center"
+        android:text="导航"
+        android:textColor="@color/navigator_color"
+        android:textSize="18px" />
+
+    <TextView
+        android:id="@+id/logo_word_mon_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="----"
+        android:textColor="#ffffff"
+        android:textSize="20dip" />
+
+        <com.bonc.mobile.hbmclient.view.DateRangeSwitchView
+            android:id="@+id/id_date_range_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+</RelativeLayout>

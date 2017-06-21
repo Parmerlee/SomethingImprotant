@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon.ttf?re5jxo') format('truetype'),
+    url('../fonts/icomoon.woff?re5jxo') format('woff'),
+    url('../fonts/icomoon.svg?re5jxo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    /*  reset */
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin: 0 3px;
+
+}
+
+.icon-btn_ri:before {
+  content: "\e900";
+}
+.icon-btn_yue:before {
+  content: "\e901";
+}
+

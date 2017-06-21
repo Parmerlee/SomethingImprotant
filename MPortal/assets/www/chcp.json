@@ -1,0 +1,8 @@
+{
+  "name": "HBAppGather",
+  "ios_identifier": "com.bonc.MBBI.CMCC.HB.MH",
+  "android_identifier": "",
+  "update": "now",
+  "content_url": "https://120.202.17.117:29443/Esop_App/www",
+  "release": "2016.12.07-09.40.27"
+}

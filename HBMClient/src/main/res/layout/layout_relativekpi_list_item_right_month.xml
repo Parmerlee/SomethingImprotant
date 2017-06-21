@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_list_right_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout 
+        android:id="@+id/id_container_1"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+    <View
+        android:id="@+id/id_div2"
+        android:layout_height="15dp"
+        android:layout_width="1dp" />
+    <RelativeLayout 
+        android:id="@+id/id_container_2"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+    <View
+        android:id="@+id/id_div3"
+        android:layout_height="15dp"
+        android:layout_width="1dp" />
+    <RelativeLayout 
+        android:id="@+id/id_container_3"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+    <View
+        android:id="@+id/id_div4"
+        android:layout_height="15dp"
+        android:layout_width="1dp" />
+    <RelativeLayout 
+        android:id="@+id/id_container_4"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/id_div5"
+        android:layout_height="15dp"
+        android:layout_width="1dp" />
+    <RelativeLayout 
+        android:id="@+id/id_container_5"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/id_div6"
+        android:layout_height="15dp"
+        android:layout_width="1dp" />
+    <RelativeLayout 
+        android:id="@+id/id_container_6"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center">
+        
+    </RelativeLayout>
+
+</LinearLayout>

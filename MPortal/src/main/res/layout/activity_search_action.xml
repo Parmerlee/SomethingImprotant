@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/search_title_search" />
+
+    <ViewStub
+        android:id="@+id/activity_search_action_s"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout="@layout/activity_search_action_left"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        layout="@layout/activity_search_action_left"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/search_action_bom"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <ListView
+                    android:id="@+id/search_lv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:scrollbars="@null" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_action_bom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/search_common_bg"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingBottom="3dp"
+                    android:text="你可能查找以下内容："
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:scrollbars="@null" >
+
+                    <com.bonc.mobile.common.view.FlowLayout
+                        android:id="@+id/search_fl_union"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </ScrollView>
+            </LinearLayout>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                layout="@layout/menu_left_bottom"
+                android:filterTouchesWhenObscured="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_search_action_st"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/activity_search_action_left_lv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@drawable/list_item_bg"
+                android:scrollbars="@null" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/activity_search_action_left_lv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:scrollbars="@null"
+                android:visibility="visible" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/activity_search_action_left_clear"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onClick"
+                android:src="@mipmap/ssdk_oks_skyblue_logo_youdao"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

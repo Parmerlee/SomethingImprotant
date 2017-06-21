@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 窜货左下方模块的一半 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textAppearance="@style/text_title_style" />
+        <TextView
+            android:id="@+id/id_title_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_title"
+            android:visibility="gone"
+            android:text="----"
+            android:textAppearance="@style/text_title_sub_style" />
+
+        <include
+            android:id="@+id/id_item0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/layout_basic_view_item_n0" />
+
+        <include
+            android:id="@+id/id_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/id_item0"
+            android:layout_below="@id/id_title"
+            layout="@layout/layout_basic_view_item_n1" />
+    </RelativeLayout>
+
+</LinearLayout>

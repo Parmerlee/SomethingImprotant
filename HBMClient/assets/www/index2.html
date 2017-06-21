@@ -1,0 +1,256 @@
+<!DOCTYPE >
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Jingle V0.4</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/Jingle.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/jchart_bar.css">    
+</head>
+
+<body>
+
+<div id="aside_container">
+</div>
+
+<div id="section_container">
+    <section id="index2_section" class="active">
+                <header>
+            <!--<nav class="left">
+                <a id="btn_scan_barcode" data-icon="qrcode" href=""></a>
+            </nav>-->
+            <h1 class="title">市场运营发展日报</h1>
+            <nav class="right">
+                <!-- <a data-target="section" data-icon="info" href="#about_section"></a> -->
+            </nav>
+        </header>
+
+        <article class="active" id="index2_article"  data-scroll="true">
+            <ul class="list">
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">收入发展</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao1_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >出账收入及同比增幅情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+              <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">用户发展</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao2_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >通信及通话用户发展情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao21_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >累计新增用户及三家份额情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao22_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >日均通信用户及份额情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">4G发展</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao3_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >4G用户渗透率及流量使用情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao31_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >定制版及公开版4G终端销量</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">宽带发展</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao4_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >宽带用户到达及累计净增情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+               <li data-selected="selected">
+                    <a href="#ribao41_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >有线宽带及CPE成功装机情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">话务发展</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#ribao5_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >累计计费时长及份额变化情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">流量经营</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#jifeiliuliang_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >累计计费流量及增幅情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#flowManager_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >一体化资费用户及渗透率情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">实名制补录</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#realNameMakeup_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >实名制补录情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+                <li class="zdivider">
+                  <div class="grid right">
+                    <div class="col-1">政企市场</div>
+                    <div class="grid-fixwhitelabel"></div>
+                    <div class="grid-fixwhitelabel"></div>
+                  </div>
+                </li>
+
+                <li data-selected="selected">
+                    <a href="#groupProduction_section" data-target="section">
+                         <div class="grid ">
+                            <div class="col-z1" >集团重点产品情况</div>
+                            <div class="col-z1"></div>
+                            <div class="grid-fixwhitelabel"></div>
+                          </div>
+                    </a>
+                </li>
+
+            </ul>
+        </article>
+    </section>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+
+<script type="text/javascript" src="js/lib/zepto.js"></script>
+<script type="text/javascript" src="js/lib/iscroll.js"></script>
+<script type="text/javascript" src="js/lib/template.min.js"></script>
+<script type="text/javascript" src="js/lib/Jingle.debug.js"></script>
+<script type="text/javascript" src="js/lib/zepto.touch2mouse.js"></script>
+<script type="text/javascript" src="js/lib/JChart.debug.js"></script>
+<script type="text/javascript" src="js/lib/d3.js"></script>
+<script type="text/javascript" src="js/lib/echarts-all.js"></script>
+<script type="text/javascript" src="js/lib/jchart_hbar.js"></script>
+<script type="text/javascript" src="js/lib/jchart_vbar.js"></script>
+
+<script type="text/javascript" src="js/app/app.js"></script>
+<script type="text/javascript" src="js/app/jiakuan.js"></script>
+<script type="text/javascript" src="js/app/homenetwork.js"></script>
+<script type="text/javascript" src="js/app/zhenqi.js"></script>
+<script type="text/javascript" src="js/app/zhenqi2.js"></script>
+<script type="text/javascript" src="js/app/zhenqi3.js"></script>
+<!--<script src="http://192.168.2.153:8080/target/target-script-min.js#anonymous"></script>-->
+</body>
+</html>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" 
+        	android:background="@mipmap/popup_top_bg">
+
+            <ImageView
+                android:id="@+id/pop_left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/ic_popup_arrow_left1" />
+
+            <TextView
+                android:id="@+id/pop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/default_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/pop_right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_popup_arrow_right1" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/pop_viewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+        	android:background="@mipmap/popup_body_bg">
+
+            <LinearLayout
+                android:id="@+id/pop_graph"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_pop_height"
+                android:orientation="vertical" 
+                android:paddingTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/pop_chart"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_pop_height">
+
+                <com.bonc.mobile.hbmclient.view.ChartView
+                    android:id="@+id/popChartView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popChartView_tv"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@mipmap/pop_chartview_tv_bg"
+                    android:layout_marginBottom="@dimen/default_chart_tv_bottom"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <!-- <LinearLayout
+                android:id="@+id/pop_barChart"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_pop_height"
+                android:orientation="vertical" /> -->
+
+            <HorizontalScrollView
+                android:id="@+id/scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_pop_height"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="430dip"
+                        android:layout_height="wrap_content"
+                        android:minHeight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#facd89" >
+                        <!-- 最近30日 -->
+                        <LinearLayout
+                            android:layout_width="90dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" 
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/list_title_01"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center_vertical"
+                                android:text=""
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" >
+                            </TextView>
+                        </LinearLayout>
+                        <!-- 当日值 -->
+                        <LinearLayout
+                            android:layout_width="80dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" 
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/list_title_02"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center_vertical"
+                                android:text=""
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" >
+                            </TextView>
+                        </LinearLayout>
+                        <!-- 本月累计 -->
+                        <LinearLayout
+                            android:layout_width="80dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" >
+                            <TextView
+                                android:id="@+id/list_title_03"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center_vertical"
+                                android:text=""
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" >
+                            </TextView>
+                        </LinearLayout>
+                        <!-- 上月同期 -->
+
+                        <LinearLayout
+                            android:layout_width="80dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" 
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/list_title_04"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center_vertical"
+                                android:text=""
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" >
+                            </TextView>
+                        </LinearLayout>
+
+                        <!-- 环比 -->
+                        <LinearLayout
+                            android:layout_width="80dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" >
+                            <TextView
+                                android:id="@+id/list_title_05"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center_vertical"
+                                android:text=""
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" >
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/img_everyday_develop_listview_top" />
+
+                    <ListView
+                        android:id="@+id/pop_graph_listView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@mipmap/img_everyday_develop_listview_divider"
+                        android:drawSelectorOnTop="false"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="true"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>

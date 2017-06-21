@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.bonc.mobile.hbmclient.view.BoardScrollView
+        android:id="@+id/id_scrollview_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarStyle="insideInset" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_top10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <include
+                        android:id="@+id/id_pss_module_middle_terminal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/layout_basic_view_module_middle_2row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="日销量"
+                        android:textAppearance="@style/text_title_style" />
+
+                    <include
+                        android:id="@+id/id_bar_line_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        layout="@layout/model_column_chart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="19" >
+
+                    <include
+                        android:id="@+id/id_fg_lb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="11"
+                        layout="@layout/layout_basic_view_module_6row" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="8"
+                        android:background="@mipmap/home_item_bg"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/id_ringChart_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="三大品牌销量占比分析"
+                            android:textAppearance="@style/text_title_style" />
+
+                        <include
+                            android:id="@+id/id_ringChart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            layout="@layout/layout_basic_view_module_ringchart" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/home_item_bg" >
+
+                    <com.bonc.mobile.hbmclient.view.HorizontalProgressBarViewGroup
+                        android:id="@+id/id_progressbar_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="当月终端销售结构"
+                            android:textAppearance="@style/text_title_style" />
+                    </com.bonc.mobile.hbmclient.view.HorizontalProgressBarViewGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/home_item_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="八大渠道销量占比"
+                        android:textAppearance="@style/text_title_style" />
+
+                    <include
+                        android:id="@+id/id_bar_chart_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        layout="@layout/model_column_chart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bonc.mobile.hbmclient.view.BoardScrollView>
+
+    <include layout="@layout/layout_arrow_two_r" />
+
+    <include layout="@layout/layout_button_terminal" />
+
+</RelativeLayout>
